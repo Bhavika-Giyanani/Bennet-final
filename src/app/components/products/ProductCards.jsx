@@ -42,7 +42,7 @@ const ProductCards = ({ data }) => {
     return category.productData.map((product, index) => (
       <motion.div
         key={index}
-        className="w-[220px] bg-[#AECA1DE5] px-6 py-4 rounded-lg text-center"
+        className="w-[260px] bg-[#AECA1DE5] px-6 py-4 rounded-lg text-center"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: index * 0.1 }}
