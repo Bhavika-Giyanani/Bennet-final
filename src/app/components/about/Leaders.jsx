@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-const Leadership = ({data}) => {
+const Leadership = ({ data }) => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -20,7 +20,7 @@ const Leadership = ({data}) => {
       name: "Mr. J. K. Jain",
       position: "Founder & Promoter Director",
       desc: "A visionary leader who established Bennet's foundation in the pharmaceutical industry. His innovative approach continues to guide the company's growth and success.",
-      img: data?.leaders[0]?.image  || null,
+      img: data?.leaders[0]?.image || null,
     },
     {
       id: 2,
@@ -48,7 +48,6 @@ const Leadership = ({data}) => {
   return (
     <div>
       <section className="relative container mx-auto my-20 px-4">
-     
         {/* Leadership Header */}
         <motion.div
           className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
@@ -113,10 +112,10 @@ const Leadership = ({data}) => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-            Innovation Meets Compassion
+            Visionary Leaders
             <br />
-            Exceeding Expectations with Our{" "}
-            <span className="text-[#AECA1D]">"Exceptional Teams"</span>
+            Driving Innovation, Integrity and Impact at{" "}
+            <span className="text-[#AECA1D]">"Bennet"</span>
           </h2>
         </motion.div>
 
@@ -149,8 +148,6 @@ const Leadership = ({data}) => {
             </motion.div>
           ))}
         </motion.div>
-
-
       </section>
     </div>
   );
