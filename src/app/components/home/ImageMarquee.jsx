@@ -3,17 +3,32 @@ import Marquee from "react-fast-marquee";
 
 const ImageMarquee = () => {
   const images = [
-    "/AboutUs.png",
-    "/bennet.png",
-    "/doctor.png",
+    "/career-img-2.png",
+    "/GroupPhoto1.jpg",
+    "/GroupPhoto2.jpg",
+    "/GroupPhoto3.jpg",
+    "/learning.png",
+    "/learning1.jpg",
+    "/learning2.jpg",
+    "/learning3.jpg",
+    "/learning4.jpg",
+    "/meeting.png",
     "/reward1.jpg",
     "/reward2.jpg",
     "/reward3.jpg",
+    "/reward4.png",
+    "/strength.png",
+    "/strength1.jpg",
+    "/strength2.jpg",
+    "/worklife1.jpg",
+    "/worklife2.jpg",
+    "/worklife3.jpg",
+    "/worklife4.png",
   ];
 
   return (
     <div className="xl:container p-0 overflow-hidden mb-10">
-      <Marquee speed={60} gradient={false}>
+      <Marquee speed={50} gradient={false}>
         <div className="flex space-x-6 py-4">
           {[...images, ...images].map((src, i) => (
             <div
