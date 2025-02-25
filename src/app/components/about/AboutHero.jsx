@@ -70,7 +70,13 @@ const AboutHero = ({ data }) => {
                 </div>
 
                 <div className="relative z-30">
-                  <div className="flex md:flex-col">
+                  <div>
+                    <h1 className="md:hidden">
+                      Building Healthier{" "}
+                      <span className="text-[#AECA1D]">Communities</span>
+                    </h1>
+                  </div>
+                  <div className="hidden md:flex md:flex-col">
                     <div className="leading-tight md:relative">
                       Building
                       <div className="md:absolute md:-mt-[5.5rem] flex md:ml-[17.5rem] lg:-mt-[7.5rem] lg:ml-[23rem] ">
@@ -121,7 +127,7 @@ const AboutHero = ({ data }) => {
             {/* Image */}
 
             <div
-              className="h-full scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
+              className="h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
               style={{
                 maskImage: "url('/aboutmold.png')",
                 WebkitMaskImage: "url('/aboutmold.png')",
