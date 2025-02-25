@@ -1,0 +1,27 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite; /* Adjust the duration as needed */
+}
+
+.marquee-item {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between images */
+  height: 100px; /* Adjust image height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
