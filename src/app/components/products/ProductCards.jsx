@@ -2,8 +2,31 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronDown } from "react-icons/fa";
+import { getProductPage } from "@/sanity/lib/queries";
 
-const ProductCards = ({ data }) => {
+const ProductCards = () => {
+  const [data, setData] = useState({ categories: [] });
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const productData = await getProductPage();
+        // Make sure we're setting the data with the correct structure
+        if (productData && productData.productsection) {
+          setData(productData.productsection);
+        } else {
+          console.error("Product data has unexpected structure:", productData);
+        }
+      } catch (error) {
+        console.error("Error fetching product data:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
+
   const [activeSection, setActiveSection] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -38,7 +61,11 @@ const ProductCards = ({ data }) => {
   };
 
   const renderProductCards = (categoryIndex) => {
+    if (!data.categories || !data.categories[categoryIndex]) return null;
+    
     const category = data.categories[categoryIndex];
+    if (!category.productData) return null;
+    
     return category.productData.map((product, index) => (
       <motion.div
         key={index}
@@ -56,6 +83,8 @@ const ProductCards = ({ data }) => {
   };
 
   const renderRow = (startIndex, endIndex) => {
+    if (!data.categories) return null;
+    
     return data.categories
       .slice(startIndex, endIndex)
       .map((section, sectionIndex) => {
@@ -131,6 +160,26 @@ const ProductCards = ({ data }) => {
     }
     return null;
   };
+
+  if (isLoading) {
+    return (
+      <section className="my-8 mb-12 px-4 md:px-8 max-w-[1440px] mx-auto">
+        <div className="flex justify-center items-center h-40">
+          <p>Loading products...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (!data.categories || data.categories.length === 0) {
+    return (
+      <section className="my-8 mb-12 px-4 md:px-8 max-w-[1440px] mx-auto">
+        <div className="flex justify-center items-center h-40">
+          <p>No product categories found.</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

@@ -10,8 +10,8 @@ const Products = async () => {
 
   return (
     <>
-      <ProductHero2 data={productData.secondherosection} />
-      <ProductCards data={productData.productsection} />
+      <ProductHero2 />
+      <ProductCards />
       <Innovation />
     </>
   );

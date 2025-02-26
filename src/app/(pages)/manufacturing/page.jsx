@@ -59,7 +59,7 @@ export default function Manufacturing() {
       {/* Excellence Section */}
       <section className="container mx-auto px-4 relative mt-12">
         <motion.div
-          className="border border-[#2C3D5A] bg-[#D9D9D980] p-6 md:p-8 lg:p-16 rounded-3xl shadow-sm mx-auto relative z-10"
+          className="border border-[#2C3D5A] bg-gray-100 p-6 md:p-8 lg:p-16 rounded-3xl shadow-sm mx-auto relative z-10"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
@@ -75,16 +75,6 @@ export default function Manufacturing() {
                   className="h-60  w-72  mt-10 sm:w-48 sm:h-48 sm:mt-4  md:mt-10 lg:mt-2 md:h-60 md:w-60 xl:h-60 xl:w-60  opacity-80 mix-blend-multiply"
                 />
               </div>
-
-              {/* Title */}
-              <motion.h2
-                className="text-2xl md:text-4xl font-bold mb-4 text-center relative z-10"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                Where excellence meets accessibility
-              </motion.h2>
             </div>
 
             <motion.div
@@ -98,14 +88,14 @@ export default function Manufacturing() {
               }}
             >
               <motion.p>
-                <motion.span>
+                <motion.span className="text-2xl">
                   At Bennet Pharmaceuticals, we believe in delivering
                   high-quality healthcare solutions through advanced
                   manufacturing practices.
                 </motion.span>
                 <br />
                 <br />
-                <motion.span>
+                <motion.span className="text-2xl">
                   Our facilities are designed to meet the highest standards of
                   excellence, ensuring precision, safety, and innovation in
                   every product.
@@ -334,7 +324,7 @@ export default function Manufacturing() {
           </motion.h3>
 
           {/* Map */}
-          <div className="-ml-10 ">
+          <div className=" ">
             <DynamicWorldMap />
           </div>
         </div>
@@ -380,9 +370,12 @@ export default function Manufacturing() {
               transition={{ duration: 1, delay: 0.7 }}
             >
               At Bennet Pharmaceuticals, we specialize in contract manufacturing
-              of finished formulations, including tablets, capsules, liquid
-              orals, soft gels, and bi-layered and sustained-release
-              preparations.
+              of finished formulations, including{" "}
+              <span className="font-bold capitalize">
+                {" "}
+                tablets, capsules, liquid orals, soft gels, and bi-layered and
+                sustained-release preparations.{" "}
+              </span>
             </motion.p>
             <br />
             <br />
@@ -443,14 +436,12 @@ export default function Manufacturing() {
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeInUp}
       >
-        <div className="container bg-[#D7E48E] mx-auto px-2 md:px-4 py-6 rounded-2xl">
-          <div className="flex flex-col  md:gap-12 md:flex-row items-center md:justify-between">
-            <div className="md:w-2/5 xl:w-[42%] w-full text-center md:text-left">
-              <h3 className="font-bold text-2xl sm:text-3xl lg:text-3xl xl:text-4xl mb-2">
-                To know more about us Contact at
-              </h3>
-            </div>
-            <div className="md:w-3/5 xl:w-[58%] w-full text-center md:text-left text-lg lg:text-2xl">
+        <div className="container mx-auto bg-[#D7E48E] rounded-2xl">
+          <div className="flex flex-col md:flex-row items-center justify-between p-6 w-[3/4]">
+            <h3 className="text-center font-bold text-2xl m:text-3xl lg:text-3xl xl:text-4xl">
+              To know more about us Contact at
+            </h3>
+            <div className="text-center md:text-left text-lg lg:text-2xl">
               <p>Email: cm@bennetpharmaceuticals.com</p>
               <p>Call: (+91) 8650107111</p>
             </div>
@@ -563,7 +554,7 @@ export default function Manufacturing() {
           </p>
           <div className="text-sm md:text-xl">
             <p>Email: Export@bennetpharmaceuticals.com</p>
-            <p>Call: (+91)9625102437</p>
+            <p>Call: (+91) 9825110437</p>
           </div>
         </motion.div>
       </div>

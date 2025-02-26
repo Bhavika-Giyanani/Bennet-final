@@ -2,16 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ClockIcon,
-  PhoneIcon,
-  EmailIcon,
-  MapPinIcon,
-  InstagramIcon,
-  XIcon,
-  FacebookIcon,
-} from "./SvgIcons";
+import { ClockIcon, PhoneIcon, EmailIcon, MapPinIcon } from "./SvgIcons";
 import { usePathname } from "next/navigation";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const navigation = [
@@ -36,7 +29,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="flex flex-col items-start text-center space-y-6">
             {/* Logo */}
-            <div className="flex  w-full">
+            <div className="flex w-full">
               <Image
                 src="/bennet.png"
                 alt="Bennet Pharmaceuticals Ltd."
@@ -95,21 +88,26 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex flex-col md:items-center md:text-center space-y-6">
-            <h3 className="text-lg font-bold mb-6 lg:mb-2 ml-2 md:ml-0 ">
-              Connect With Us
-            </h3>
-            <div className="space-y-4 text-start ml-2.5">
-              <div className="flex items-center space-x-3">
-                <FacebookIcon className="w-4 h-4 text-[#9DC41A]" />
-                <span className="text-sm">xyz@.com</span>
+            <div className="text-center">
+              <h3 className="text-lg font-bold mb-6">Connect With Us</h3>
+              <div className=" flex space-x-2 items-center">
+                <FaLinkedin className="w-4 h-4 text-[#9DC41A]" />
+                <a href="https://www.linkedin.com" className="text-sm">
+                  LinkedIn
+                </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <XIcon className="w-4 h-4 text-[#9DC41A]" />
-                <span className="text-sm">xyz@.com</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <InstagramIcon className="w-4 h-4 text-[#9DC41A]" />
-                <span className="text-sm">xyz@.com</span>
+            </div>
+            <div className="mt-12 text-center">
+              <h3 className="text-lg font-bold mb-6 ml-6">Contact for Exports</h3>
+              <div className="space-y-4 text-start ml-7">
+                <div className="flex items-center space-x-3">
+                  <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
+                  <p className="text-sm">exports@bennet.com</p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <PhoneIcon className="w-4 h-4 text-[#9DC41A]" />
+                  <p className="text-sm">+91 9825110437</p>
+                </div>
               </div>
             </div>
           </div>

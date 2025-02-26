@@ -1,7 +1,19 @@
 "use client";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { getAboutPage } from "@/sanity/lib/queries";
 
-const Leadership = ({ data }) => {
+const Leadership = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const aboutData = await getAboutPage();
+      setData(aboutData.leadersection);
+    };
+    fetchData();
+  }, []);
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -115,7 +127,7 @@ const Leadership = ({ data }) => {
             Visionary Leaders
             <br />
             Driving Innovation, Integrity and Impact at{" "}
-            <span className="text-[#AECA1D]">"Bennet"</span>
+            <span className="text-[#AECA1D]">Bennet</span>
           </h2>
         </motion.div>
 

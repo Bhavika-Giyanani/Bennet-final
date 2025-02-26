@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import ImgHero from "./components/home/ImgHero";
 import ImageMarquee from "./components/home/ImageMarquee";
 import Stats from "./components/home/Stats";
@@ -9,17 +11,13 @@ import Products from "./components/home/Products";
 import Careers from "./components/home/Careers";
 import HomeHero from "./components/home/HomeHero";
 import MapWrapper from "./components/MapWrapper.jsx";
-import { getHomePage } from "@/sanity/lib/queries";
-import { getAboutPage } from "@/sanity/lib/queries";
+import { getHomePage, getAboutPage } from "@/sanity/lib/queries";
 
-const Home = async () => {
-  const homeData = await getHomePage();
-  const aboutData = await getAboutPage();
-
+const Home = () => {
   return (
     <>
       <div className="overflow-x-hidden">
-        <ImgHero data={homeData.herosection} />
+        <ImgHero />
         <HomeHero />
         <Cards />
         <Stats />
@@ -27,8 +25,8 @@ const Home = async () => {
         <div className="max-w-[1440px] mx-auto px-0">
           <MapWrapper />
         </div>
-        <Leaders data={aboutData.leadersection} />
-        <Products data={homeData.productsection} />
+        <Leaders />
+        <Products />
         <Careers />
         <ImageMarquee />
       </div>

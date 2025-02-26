@@ -60,7 +60,7 @@ const Testimonial = ({ testimonials }) => {
                 }}
                 viewport={{ once: true }}
               >
-                Testimonials
+                What Our Employees Say
               </motion.h2>
 
               <motion.div
@@ -97,7 +97,7 @@ const Testimonial = ({ testimonials }) => {
                 }}
                 viewport={{ once: true }}
               >
-                Testimonials
+                What Our Employees Say
               </motion.h2>
 
               <motion.div

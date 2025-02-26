@@ -68,7 +68,7 @@ export default function HeroSection({
               </motion.h1>
 
               <motion.p
-                className="text-xl md:text-2xl text-gray-700"
+                className="text-xl md:text-3xl text-gray-700 font-bold"
                 variants={leftItemVariants}
                 whileHover={{
                   scale: 1.02,

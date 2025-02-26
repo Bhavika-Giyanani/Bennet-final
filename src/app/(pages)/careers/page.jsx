@@ -23,7 +23,7 @@ export default function CareersPage() {
       },
     },
   };
-  const [heroImage, setHeroImage] = useState("");
+  const [heroImage, setHeroImage] = useState(null);
   const [sliderImages, setSliderImages] = useState([]);
 
   useEffect(() => {

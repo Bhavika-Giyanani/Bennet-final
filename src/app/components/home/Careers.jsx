@@ -71,7 +71,7 @@ const Events = () => {
           </div>
 
           <motion.div
-            className="relative rounded-[2rem] bg-[#AECA1D]/40 p-8 md:p-16"
+            className="relative rounded-[2rem] bg-[#D7E48E] p-8 md:p-16"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -98,7 +98,7 @@ const Events = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Link
-                    href="#"
+                    href="/careers"
                     className="inline-block bg-black text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-gray-900 transition-colors duration-300"
                   >
                     Explore More

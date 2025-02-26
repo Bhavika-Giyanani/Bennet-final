@@ -1,9 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { getHomePage } from "@/sanity/lib/queries";
 
-const Products = ({ data }) => {
+const Products = () => {
+  const [heroImage, setHeroImage] = useState("");
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getHomePage();
+      setHeroImage(data?.productsection?.image || "/pills.png"); // Fallback if no image
+    }
+    fetchData();
+  }, []);
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -86,7 +97,7 @@ const Products = ({ data }) => {
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">
                 <div
-                  className="w-full xl:w-[36rem] 2xl:w-full max-w-[41rem] h-full rounded-[2rem] hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full md:w-[550px] md:h-[500px] md:mt-16 rounded-[2rem] hover:scale-105 transition-transform duration-300"
                   style={{
                     maskImage: "url('/homeproductmold.png')",
                     WebkitMaskImage: "url('/homeproductmold.png')",
@@ -96,7 +107,7 @@ const Products = ({ data }) => {
                     WebkitMaskSize: "120% 100%",
                     maskPosition: "center",
                     WebkitMaskPosition: "center",
-                    backgroundImage: `url(${data.image})`,
+                    backgroundImage: `url(${heroImage})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     maskRepeat: "no-repeat",
@@ -158,7 +169,7 @@ const Products = ({ data }) => {
               transition={{ duration: 0.2 }}
             >
               <Link
-                href="/products#Ourproducts"
+                href="/products"
                 className="bg-[#83961D] text-white text-xl font-medium px-8 py-2 rounded-full transition-all duration-300 hover:bg-[#96ac22] hover:shadow-lg"
               >
                 Know More
@@ -174,7 +185,7 @@ const Products = ({ data }) => {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="/products#Ourproducts"
+                href="/products"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black text-white text-2xl transition-all duration-300 hover:bg-gray-900 hover:shadow-lg"
               >
                 <motion.span

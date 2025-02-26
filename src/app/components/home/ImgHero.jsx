@@ -1,8 +1,20 @@
 "use client";
 
+import { getHomePage } from "@/sanity/lib/queries";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-const ImgHero = ({ data }) => {
+const ImgHero = () => {
+  const [heroImage, setHeroImage] = useState("");
+    useEffect(() => {
+      async function fetchData() {
+        const data = await getHomePage();
+        console.log(data)
+        setHeroImage(data?.herosection?.image || "/pills.png"); // Fallback if no image
+      }
+      fetchData();
+    }, []); 
+
   const leftContentVariants = {
     hidden: { opacity: 0, x: -200 },
     visible: {
@@ -118,7 +130,7 @@ const ImgHero = ({ data }) => {
             </motion.h1>
 
             <motion.p
-              className="text-xl md:text-2xl text-gray-700 cursor-default"
+              className="text-xl md:text-2xl text-gray-700 cursor-default font-bold"
               variants={leftItemVariants}
               whileHover={{
                 scale: 1.02,
@@ -150,7 +162,7 @@ const ImgHero = ({ data }) => {
                   WebkitMaskSize: "100% 150%",
                   maskPosition: "center",
                   WebkitMaskPosition: "center",
-                  backgroundImage: `url(${data.image})`,
+                  backgroundImage: `url(${heroImage})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   maskRepeat: "no-repeat",

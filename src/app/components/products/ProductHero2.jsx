@@ -2,8 +2,18 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { getProductPage } from "@/sanity/lib/queries";
+import { useEffect, useState } from "react";
 
-const ProductHero2 = ({ data }) => {
+const ProductHero2 = () => {
+  const [heroImage, setHeroImage] = useState("");
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getProductPage();
+      setHeroImage(data?.secondherosection?.image || "/pills.png"); // Fallback if no image
+    }
+    fetchData();
+  }, []);
   const leftContentVariants = {
     hidden: { opacity: 0, x: -200 },
     visible: {
@@ -80,7 +90,7 @@ const ProductHero2 = ({ data }) => {
         <motion.div
           className="w-full max-w-[640px] mx-auto md:ml-auto lg:-mt-10"
           variants={rightImageVariants}
-        >
+        > 
           <div
             className="h-[36rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
             style={{
@@ -92,7 +102,7 @@ const ProductHero2 = ({ data }) => {
               WebkitMaskSize: "100% 100%",
               maskPosition: "center",
               WebkitMaskPosition: "center",
-              backgroundImage: `url(${data.image})`,
+              backgroundImage: `url(${heroImage})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               maskRepeat: "no-repeat",
@@ -100,17 +110,13 @@ const ProductHero2 = ({ data }) => {
               backgroundColor: "black",
             }}
           ></div>
-          {/* <img
-            src="/Manufacturing1.png"
-            alt="pills"
-            className="w-full h-auto max-h-[34rem]"
-          /> */}
+          
         </motion.div>
       </div>
 
       {/* Green Card */}
       <motion.div
-        className="p-4 md:p-8 flex flex-col mt-20 md:flex-row items-center justify-between bg-[#AECA1D] rounded-xl max-w-screen-xl mx-auto gap-6 md:gap-12"
+        className="p-4 md:p-8 flex flex-col mt-20 md:flex-row items-center justify-between bg-[#D7E48E] rounded-xl max-w-screen-xl mx-auto gap-6 md:gap-12"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}

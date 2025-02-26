@@ -2,8 +2,19 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { getAboutPage } from "@/sanity/lib/queries";
 
-const AboutHero = ({ data }) => {
+const AboutHero = () => {
+  const [heroImage, setHeroImage] = useState("");
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getAboutPage();
+      setHeroImage(data?.herosection?.image || "/pills.png"); // Fallback if no image
+    }
+    fetchData();
+  }, []);
+
   const leftContentVariants = {
     hidden: { opacity: 0, x: -200 },
     visible: {
@@ -97,10 +108,14 @@ const AboutHero = ({ data }) => {
 
             <div className=" -ml-3 lg:ml-2 md:-ml-1 lg:-mt-[1.3rem]  ">
               <motion.p
-                className="text-xl md:text-2xl text-gray-700 ] "
+                className="text-xl md:text-2xl text-gray-700 cursor-default font-bold"
                 variants={leftItemVariants}
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 0.3, ease: "easeInOut" },
+                }}
               >
-                <span className=" "> Transforming Lives Since 1996.</span>
+                Transforming Lives Since 1996.
               </motion.p>
             </div>
 
@@ -137,7 +152,7 @@ const AboutHero = ({ data }) => {
                 WebkitMaskSize: "115% 100%",
                 maskPosition: "center",
                 WebkitMaskPosition: "center",
-                backgroundImage: `url(${data.image})`,
+                backgroundImage: `url(${heroImage})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 maskRepeat: "no-repeat",

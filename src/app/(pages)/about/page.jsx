@@ -12,13 +12,13 @@ const page = async () => {
   return (
     <>
       <div className="max-w-[1440px] mx-auto px-0 ">
-        <AboutHero data={aboutData.herosection}/>
+        <AboutHero />
         <Commitment />
         <div id="Values">
           <Values />
         </div>
         <div id="Leaders">
-          <Leaders data={aboutData.leadersection} />
+          <Leaders />
         </div>
       </div>
     </>
