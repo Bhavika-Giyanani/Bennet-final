@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Quicklinks */}
           <div className="flex flex-col md:items-center md:text-center space-y-6">
-            <h3 className="text-lg font-bold mb-6 lg:mb-2  ml-2 md:ml-0">
+            <h3 className="text-lg font-bold md:mb-6 lg:mb-2  ml-2 md:ml-0">
               Quicklinks
             </h3>
             <ul className="space-y-3 text-start ml-2.5 ">
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex flex-col md:items-center md:text-center space-y-6">
-            <div className="text-center">
+            <div className="md:text-center">
               <h3 className="text-lg font-bold mb-6">Connect With Us</h3>
               <div className=" flex space-x-2 items-center">
                 <FaLinkedin className="w-4 h-4 text-[#9DC41A]" />
@@ -97,9 +97,9 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="mt-12 text-center">
-              <h3 className="text-lg font-bold mb-6 ml-6">Contact for Exports</h3>
-              <div className="space-y-4 text-start ml-7">
+            <div className="mt-12 md:text-center">
+              <h3 className="text-lg font-bold mb-6 md:ml-6">Contact for Exports</h3>
+              <div className="space-y-4 text-start md:ml-7">
                 <div className="flex items-center space-x-3">
                   <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
                   <p className="text-sm">exports@bennet.com</p>
