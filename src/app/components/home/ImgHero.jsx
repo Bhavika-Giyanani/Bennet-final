@@ -80,7 +80,7 @@ const ImgHero = () => {
               <div>
                 <img
                   src="./tab.svg"
-                  className="lg:hidden xl:block"
+                  className="lg:hidden xl:block w-14"
                   alt="Smol Tablet"
                 />
               </div>

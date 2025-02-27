@@ -11,7 +11,7 @@ const Cards = () => {
     },
     {
       id: 2,
-      title: "Critical Division",
+      title: "Critical Care Division",
     },
     {
       id: 3,

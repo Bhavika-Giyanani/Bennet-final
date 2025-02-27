@@ -59,12 +59,7 @@ export default {
                           name: "name",
                           title: "Product Name",
                           type: "string",
-                        },
-                        {
-                          name: "dosage",
-                          title: "Dosage",
-                          type: "string",
-                        },
+                        }, 
                       ],
                     },
                   ],

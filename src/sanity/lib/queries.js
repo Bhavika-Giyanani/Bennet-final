@@ -43,8 +43,7 @@ export async function getProductPage() {
           categories[]{
             categoryName,
             productData[]{
-              name,
-              dosage
+              name
             }
           }
         }

@@ -206,6 +206,132 @@ const Products = () => {
           </motion.div>
         </motion.div>
       </div>
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        {/* Image Section */}
+        <motion.div
+          className="relative order-2 md:order-1"
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <div className="relative mx-4 md:mx-0">
+            {/* Decorative Shapes - Responsive sizes */}
+            <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 md:w-40 h-24 md:h-40 rounded-full bg-[#AECA1D]/10 -z-10" />
+            <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 rounded-full bg-[#2C3D5A]/10 -z-10" />
+            {/* Image container */}
+            <div className="relative w-full aspect-square">
+              <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">
+                <div
+                  className="w-full h-full md:w-[550px] md:h-[500px] md:mt-16 rounded-[2rem] hover:scale-105 transition-transform duration-300"
+                  style={{
+                    maskImage: "url('/homeproductmold.png')",
+                    WebkitMaskImage: "url('/homeproductmold.png')",
+                    maskSize: "contain",
+                    WebkitMaskSize: "contain",
+                    maskSize: "100% 150%",
+                    WebkitMaskSize: "120% 100%",
+                    maskPosition: "center",
+                    WebkitMaskPosition: "center",
+                    backgroundImage: `url("/product2.jpg")`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundColor: "black",
+                  }}
+                />
+                {/* <img
+                  src="/pills.png"
+                  alt="Our products"
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                /> */}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Text Content */}
+        <motion.div
+          className="space-y-6 md:space-y-8 order-1 md:order-2"
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeInUp}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-2xl md:text-4xl  md:-mt-12 font-bold"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            Empowering Health Journeys <br />
+            <span className="h-1 w-1"></span>
+            <br />
+            Nurturing Health Through Innovation
+          </motion.h3>
+
+          <div className="space-y-4 md:space-y-6 text-base md:text-xl text-gray-700">
+            <motion.p variants={fadeInUp} transition={{ delay: 0.2 }}>
+              At Bennet Pharmaceuticals, we are dedicated to delivering
+              high-quality, innovative pharmaceutical solutions across various
+              therapeutic areas.
+            </motion.p>
+
+            <motion.p variants={fadeInUp} transition={{ delay: 0.3 }}>
+              Our broad product portfolio meets the diverse needs of healthcare
+              professionals and patients alike, ensuring accessibility and
+              reliability in every product we offer.
+            </motion.p>
+          </div>
+
+          {/* Know More */}
+          <motion.div
+            className="flex items-center  gap-4 pt-8"
+            variants={itemVariants}
+          >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Link
+                href="/products"
+                className="bg-[#83961D] text-white text-xl font-medium px-8 py-2 rounded-full transition-all duration-300 hover:bg-[#96ac22] hover:shadow-lg"
+              >
+                Know More
+              </Link>
+            </motion.div>
+
+            <motion.div
+              whileHover={{
+                x: 10,
+                scale: 1.1,
+                transition: { duration: 0.2 },
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link
+                href="/products"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black text-white text-2xl transition-all duration-300 hover:bg-gray-900 hover:shadow-lg"
+              >
+                <motion.span
+                  className="text-xs"
+                  whileHover={{
+                    x: 3,
+                    transition: {
+                      duration: 0.2,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    },
+                  }}
+                >
+                  →
+                </motion.span>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </div>
 
       {/* Our Innovation */}
       <motion.div

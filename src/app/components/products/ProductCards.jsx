@@ -75,8 +75,7 @@ const ProductCards = () => {
         transition={{ duration: 0.8, delay: index * 0.1 }}
       >
         <p className="font-bold">
-          {product.name}{" "}
-          <span className="text-[#929FAE]">{product.dosage}</span>
+          {product.name}
         </p>
       </motion.div>
     ));

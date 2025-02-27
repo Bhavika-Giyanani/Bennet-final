@@ -90,15 +90,27 @@ export default function Footer() {
           <div className="flex flex-col md:items-center md:text-center space-y-6">
             <div className="md:text-center">
               <h3 className="text-lg font-bold mb-6">Connect With Us</h3>
-              <div className="flex space-x-2 items-center ml-2">
-                <FaLinkedin className="w-5 h-5 text-[#9DC41A]" />
-                <a href="https://www.linkedin.com" className="text-sm">
-                  LinkedIn
-                </a>
+              <div className="flex flex-col space-y-2 xl:ml-20">
+                <div className="flex space-x-2 items-center ml-2">
+                  <FaLinkedin className="w-5 h-5 text-[#9DC41A]" />
+                  <a href="https://www.linkedin.com" className="text-sm">
+                    LinkedIn
+                  </a>
+                </div>
+                <div className="flex space-x-2 items-center ml-2">
+                  <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
+                  <p className="text-sm">cm@bennetpharmaceuticals.com</p>
+                </div>
+                <div className="flex space-x-2 items-center ml-2">
+                  <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
+                  <p className="text-sm">jobs.bennet@gmail.com</p>
+                </div>
               </div>
             </div>
             <div className="mt-12 md:text-center">
-              <h3 className="text-lg font-bold mb-6 md:ml-6">Contact for Exports</h3>
+              <h3 className="text-lg font-bold mb-6 md:ml-6">
+                Contact for Exports
+              </h3>
               <div className="space-y-4 text-start ml-2 md:ml-7">
                 <div className="flex items-center space-x-3">
                   <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
