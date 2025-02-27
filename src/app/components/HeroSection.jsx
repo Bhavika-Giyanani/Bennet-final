@@ -82,7 +82,7 @@ export default function HeroSection({
                 <motion.div variants={leftItemVariants}>
                   <div className="md:-ml-4 lg:-ml-0">
                     <Link
-                      href="#"
+                      href="#manufacturing"
                       className="bg-black pl-4 py-3 md:mb-[20rem] md:ml-4 lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
                     >
                       Know More{" "}

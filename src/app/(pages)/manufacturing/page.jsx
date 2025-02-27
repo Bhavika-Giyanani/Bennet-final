@@ -107,7 +107,7 @@ export default function Manufacturing() {
       </section>
 
       {/* Manufacturing Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" id="manufacturing">
         <div className="container mx-auto px-4">
           {/* Title */}
           {isLargeScreen ? (

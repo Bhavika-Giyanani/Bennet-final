@@ -184,7 +184,7 @@ const ProductCards = () => {
   return (
     <section
       className="my-8 mb-12 px-4 md:px-8 max-w-[1440px] mx-auto"
-      id="Ourproducts"
+      id="product"
     >
       <motion.div
         className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
