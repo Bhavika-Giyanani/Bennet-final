@@ -51,7 +51,7 @@ export default function Header() {
       href: "/about",
       dropdown: [
         { name: "Core Values", href: "/about#Values" },
-        { name: "LEADERSHIP", href: "/about#Leaders" },
+        { name: "Leadership", href: "/about#Leaders" },
       ],
     },
     { name: "Our Products", href: "/products" },
@@ -108,7 +108,7 @@ export default function Header() {
           >
             <Link href="/" className="flex items-center">
               <Image
-                src="/bennet.png"
+                src="/bennet-2.png"
                 alt="Bennet Pharmaceuticals Ltd."
                 width={150}
                 height={40}

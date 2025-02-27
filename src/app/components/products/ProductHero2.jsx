@@ -92,7 +92,7 @@ const ProductHero2 = () => {
           variants={rightImageVariants}
         > 
           <div
-            className="h-[36rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
+            className="h-[20rem] md:h-[24rem] lg:-[32rem] xl:h-[36rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
             style={{
               maskImage: "url('/secondmold.png')",
               WebkitMaskImage: "url('/secondmold.png')",

@@ -5,9 +5,9 @@ import { Box } from "lucide-react";
 
 const HomeHero = () => {
   return (
-    <section className="container mx-auto my-20 px-4 " id="hero">
+    <section className="container mx-auto my-20 px-4" id="hero">
       <motion.div
-        className="relative rounded-[2rem] bg-gray-100 p-16 md:p-20 border border-[#2C3D5A]/20"
+        className="relative rounded-[2rem] bg-gray-100 px-2 py-8 md:p-20 border border-[#2C3D5A]/20"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

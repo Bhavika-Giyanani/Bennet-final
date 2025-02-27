@@ -31,7 +31,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex w-full">
               <Image
-                src="/bennet.png"
+                src="/bennet-2.png"
                 alt="Bennet Pharmaceuticals Ltd."
                 width={150}
                 height={40}
@@ -90,8 +90,8 @@ export default function Footer() {
           <div className="flex flex-col md:items-center md:text-center space-y-6">
             <div className="md:text-center">
               <h3 className="text-lg font-bold mb-6">Connect With Us</h3>
-              <div className=" flex space-x-2 items-center">
-                <FaLinkedin className="w-4 h-4 text-[#9DC41A]" />
+              <div className="flex space-x-2 items-center ml-2">
+                <FaLinkedin className="w-5 h-5 text-[#9DC41A]" />
                 <a href="https://www.linkedin.com" className="text-sm">
                   LinkedIn
                 </a>
@@ -99,7 +99,7 @@ export default function Footer() {
             </div>
             <div className="mt-12 md:text-center">
               <h3 className="text-lg font-bold mb-6 md:ml-6">Contact for Exports</h3>
-              <div className="space-y-4 text-start md:ml-7">
+              <div className="space-y-4 text-start ml-2 md:ml-7">
                 <div className="flex items-center space-x-3">
                   <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
                   <p className="text-sm">exports@bennet.com</p>

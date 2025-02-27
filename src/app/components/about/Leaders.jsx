@@ -152,7 +152,7 @@ const Leadership = () => {
                 alt={card.name}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 m-4 p-6 bg-white/90 backdrop-blur-sm rounded-xl transition-transform duration-300 group-hover:translate-y-0">
+              <div className="absolute bottom-0 left-0 right-0 m-4 p-2 bg-white/90 backdrop-blur-sm rounded-xl transition-transform duration-300 group-hover:translate-y-0">
                 <h3 className="text-xl font-bold mb-2">{card.name}</h3>
                 <p className="font-bold text-[#AECA1D] mb-3">{card.position}</p>
                 <p className="text-gray-700 max-w-[23.8rem] ">{card.desc}</p>

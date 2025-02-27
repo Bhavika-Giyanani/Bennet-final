@@ -142,7 +142,7 @@ const ImgHero = () => {
             </motion.p>
 
             <motion.div variants={leftItemVariants}>
-              <div className="-ml-4 md:-ml-2 lg:-ml-0 mt-4">
+              <div className=" md:-ml-2 lg:-ml-0 mt-4">
                 <Link
                   href="#hero"
                   className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
@@ -164,10 +164,10 @@ const ImgHero = () => {
               <img
                 src="/Box.svg"
                 alt="Medical consultation"
-                className="z-40 scale-75 absolute mt-[22rem]  md:mt-[25rem] md:-ml-12 lg:mt-[23rem] lg:-ml-12 "
+                className="z-40 scale-75 absolute mt-[18rem]  md:mt-[25rem] md:-ml-12 lg:mt-[23rem] lg:-ml-12 "
               />
               <div
-                className="w-full xl:w-[36rem] 2xl:w-full max-w-[41rem] h-full rounded-[2rem]"
+                className="w-[280px] h-[350px] md:w-[360px] md:h-full xl:w-[36rem] 2xl:w-full max-w-[41rem] mx-auto md:mx-0 rounded-[2rem]"
                 style={{
                   maskImage: "url('/homemold.png')",
                   WebkitMaskImage: "url('/homemold.png')",
