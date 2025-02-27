@@ -18,7 +18,7 @@ const Innovation = () => {
           viewport={{ once: true, amount: 0.9 }}
         >
           <motion.h2
-            className="w-3/5 md:w-[60%] lg:w-[50%] text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
+            className="w-3/5 ml-4 md:ml-0 md:w-[60%] lg:w-[50%] text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{
               opacity: 1,

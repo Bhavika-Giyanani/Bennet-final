@@ -1,4 +1,5 @@
 import Innovation from "@/app/components/products/Innovation";
+import Innovation2 from "@/app/components/products/Innovation2";
 import ProductCards from "@/app/components/products/ProductCards";
 import ProductHero2 from "@/app/components/products/ProductHero2";
 import { getProductPage } from "@/sanity/lib/queries";
@@ -13,6 +14,7 @@ const Products = async () => {
       <ProductHero2 />
       <ProductCards />
       <Innovation />
+      <Innovation2 />
     </>
   );
 };
