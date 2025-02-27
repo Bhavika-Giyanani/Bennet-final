@@ -58,7 +58,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
-                <p className="text-sm">sale@bennet.com</p>
+                <p className="text-sm">info@bennetpharmaceuticals.com</p>
               </div>
               <div className="flex items-center space-x-3">
                 <ClockIcon className="w-4 h-4 text-[#9DC41A]" />
