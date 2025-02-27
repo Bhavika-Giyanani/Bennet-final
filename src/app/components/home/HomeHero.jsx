@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Box } from "lucide-react";
+import Image from "next/image";
 
 const HomeHero = () => {
   return (
@@ -26,7 +27,7 @@ const HomeHero = () => {
             transition: { duration: 0.3 },
           }}
         >
-          <Box className="w-8 h-8 text-white" />
+          <Image src="/tab.svg" alt="tab" width={400} height={400} className="rotate-90"/>
         </motion.div>
 
         {/* Background decorative circles */}
@@ -49,15 +50,13 @@ const HomeHero = () => {
             Our Legacy of Care: A Journey Since 1996
           </motion.h2>
 
-          
-          <div className="absolute "> 
-               <img
-                    src="/GreenMolecule.png"
-                    alt="Medical consultation"
-                    className="-mt-10 relative w-full h-[0rem] lg:h-[38rem] rounded-[2rem] z-0"
-                  />
-
-                  </div>
+          <div className="absolute ">
+            <img
+              src="/GreenMolecule.png"
+              alt="Medical consultation"
+              className="-mt-10 relative w-full h-[0rem] lg:h-[38rem] rounded-[2rem] z-0"
+            />
+          </div>
 
           <motion.div
             className="space-y-8 text-lg md:text-2xl text-black"
@@ -73,9 +72,10 @@ const HomeHero = () => {
               }}
             >
               Since 1996, we've been dedicated to enriching the lives of our
-              citizens with the power of good health. Our journey has been one of unwavering commitment to providing
-              quality healthcare solutions that inspire trust and confidence. At Bennet, we're more than just a pharmaceutical company, we're a
-              catalyst for positive change.
+              citizens with the power of good health. Our journey has been one
+              of unwavering commitment to providing quality healthcare solutions
+              that inspire trust and confidence. At Bennet, we're more than just
+              a pharmaceutical company, we're a catalyst for positive change.
             </motion.p>
 
             <motion.p
@@ -84,10 +84,13 @@ const HomeHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              We're passionate about empowering caregivers, ensuring that vital care reaches every corner of India, and making a lasting impact 
-              on the well-being of our people. From our manufacturing facilities to our extensive distribution network, we're commited to delivering 
-              excellence in pharmaceuticals. We believe in the transformative power of healthcare and are determined to create a brighter,
-               healthier futture for all.
+              We're passionate about empowering caregivers, ensuring that vital
+              care reaches every corner of India, and making a lasting impact on
+              the well-being of our people. From our manufacturing facilities to
+              our extensive distribution network, we're commited to delivering
+              excellence in pharmaceuticals. We believe in the transformative
+              power of healthcare and are determined to create a brighter,
+              healthier futture for all.
             </motion.p>
 
             <motion.p
@@ -96,13 +99,13 @@ const HomeHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-             Join us on this journey as we strive to build a <br/>
-              <span className="text-3xl text-black font-semibold" > Stronger, Healthier India Together! </span>
+              Join us on this journey as we strive to build a <br />
+              <span className="text-3xl text-black font-semibold">
+                {" "}
+                Stronger, Healthier India Together!{" "}
+              </span>
             </motion.p>
-
-
           </motion.div>
-
         </div>
       </motion.div>
     </section>
