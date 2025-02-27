@@ -79,9 +79,9 @@ const ImgHero = () => {
               {/* Smol Box */}
               <div>
                 <img
-                  src="./SmolBox.svg"
+                  src="./tab.svg"
                   className="lg:hidden xl:block"
-                  alt="Smol Box"
+                  alt="Smol Tablet"
                 />
               </div>
 
@@ -162,7 +162,7 @@ const ImgHero = () => {
           >
             <div className="relative h-full rounded-[2rem] ">
               <img
-                src="/Box.svg"
+                src="/tab.svg"
                 alt="Medical consultation"
                 className="z-40 scale-75 absolute mt-[18rem]  md:mt-[25rem] md:-ml-12 lg:mt-[23rem] lg:-ml-12 "
               />
