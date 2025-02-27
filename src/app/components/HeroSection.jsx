@@ -11,7 +11,7 @@ export default function HeroSection({
   moldLink,
   title,
   description,
-  showKnowMoreButton,
+  knowMoreLink, 
 }) {
   const leftContentVariants = {
     hidden: { opacity: 0, x: -200 },
@@ -47,7 +47,7 @@ export default function HeroSection({
     <AnimatePresence mode="wait">
       <motion.section
         key={routeKey}
-        className="relative flex items-center overflow-x-hidden mt-[96px]"
+        className="relative flex items-center overflow-hidden mt-[96px]"
         initial="hidden"
         animate="visible"
         exit="hidden"
@@ -78,11 +78,12 @@ export default function HeroSection({
                 {description}
               </motion.p>
 
-              {showKnowMoreButton && (
+              {/* Conditionally render the Know More button if knowMoreLink is provided */}
+              {knowMoreLink && (
                 <motion.div variants={leftItemVariants}>
-                  <div className="md:-ml-4 lg:-ml-0">
+                  <div className="md:-ml-4 lg:-ml-0 mb-4">
                     <Link
-                      href="#manufacturing"
+                      href={knowMoreLink} // Use the knowMoreLink prop for the href
                       className="bg-black pl-4 py-3 md:mb-[20rem] md:ml-4 lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
                     >
                       Know More{" "}
@@ -120,13 +121,6 @@ export default function HeroSection({
                     backgroundColor: "black",
                   }}
                 />
-                {/* <Image
-                  src={imageLink}
-                  alt="Hero image"
-                  fill
-                  priority
-                  className="object-cover rounded-[2rem]"
-                /> */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem]" />
               </div>
             </motion.div>

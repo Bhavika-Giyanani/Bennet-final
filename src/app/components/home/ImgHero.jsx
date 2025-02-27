@@ -2,18 +2,19 @@
 
 import { getHomePage } from "@/sanity/lib/queries";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const ImgHero = () => {
   const [heroImage, setHeroImage] = useState("");
-    useEffect(() => {
-      async function fetchData() {
-        const data = await getHomePage();
-        console.log(data)
-        setHeroImage(data?.herosection?.image || "/pills.png"); // Fallback if no image
-      }
-      fetchData();
-    }, []); 
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getHomePage();
+      console.log(data);
+      setHeroImage(data?.herosection?.image || "/pills.png"); // Fallback if no image
+    }
+    fetchData();
+  }, []);
 
   const leftContentVariants = {
     hidden: { opacity: 0, x: -200 },
@@ -139,6 +140,20 @@ const ImgHero = () => {
             >
               Dedicated to wellness since 1996
             </motion.p>
+
+            <motion.div variants={leftItemVariants}>
+              <div className="-ml-4 md:-ml-2 lg:-ml-0 mt-4">
+                <Link
+                  href="#hero"
+                  className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
+                >
+                  Know More{" "}
+                  <span className="bg-[#AECA1DE5] rounded-full px-4 py-3">
+                    ↓
+                  </span>
+                </Link>
+              </div>
+            </motion.div>
           </motion.div>
 
           <motion.div

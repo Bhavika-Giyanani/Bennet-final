@@ -59,7 +59,7 @@ export default function CareersPage() {
                   <br />
                   <span>Future</span>'
             description="Empowering Growth, Celebrating Success"
-            showKnowMoreButton={false}
+            knowMoreLink="#careers"
           />
         </div>
 
@@ -85,7 +85,7 @@ export default function CareersPage() {
         </motion.section>
 
         {/* Vision Section */}
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-white" id="careers">
           <div className="container w-[100%] mx-auto px-4">
             <div className="my-12">
               <motion.h2

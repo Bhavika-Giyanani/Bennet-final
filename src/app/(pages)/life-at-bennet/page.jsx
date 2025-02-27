@@ -16,11 +16,11 @@ export default async function LifeAtBennet() {
           moldLink="/lifemold.png"
           title='Empowering <span className="text-[#9DC41A]">Growth</span>,<br />Celebrating <span className="text-[#9DC41A]">Success</span>'
           description="Together We Thrive, Together We Succeed"
-          showKnowMoreButton={false}
+          knowMoreLink="#life"
         />
       </div>
 
-      <section>
+      <section id="life">
         <div className="container w-[100%] mx-auto px-4 py-12 text-3xl md:text-4xl font-bold">
           <AnimatedText text="We're committed to fostering an environment where you can thrive, grow, and reach your full potential." />
         </div>

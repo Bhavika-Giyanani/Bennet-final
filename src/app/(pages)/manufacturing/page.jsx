@@ -52,7 +52,7 @@ export default function Manufacturing() {
           moldLink="/manufacturingmold.png"
           title='Empowering lives and <span className="text-[#9DC41A]">affordability</span>'
           description="Where excellence meets accessibility"
-          showKnowMoreButton={true}
+          knowMoreLink="#manufacturing"
         />
       </div>
 

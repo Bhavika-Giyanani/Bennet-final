@@ -14,7 +14,7 @@ const Commitment = () => {
   };
 
   return (
-    <section className="relative bg-[url('/commitment.png')] bg-cover  bg-center bg-fixed py-20 max-w-[1440px] mx-auto px-0">
+    <section id="commitment" className="relative bg-[url('/commitment.png')] bg-cover  bg-center bg-fixed py-20 max-w-[1440px] mx-auto px-0">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
 
