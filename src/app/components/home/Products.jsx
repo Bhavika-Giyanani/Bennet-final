@@ -134,12 +134,11 @@ const Products = () => {
           viewport={{ once: true }}
         >
           <motion.h3
-            className="text-2xl md:text-4xl  md:-mt-12 font-bold"
+            className="text-2xl md:text-3xl md:-mt-12 font-bold"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
             Empowering Health Journeys <br />
-            <span className="h-1 w-1"></span>
             <br />
             Nurturing Health Through Innovation
           </motion.h3>
@@ -160,7 +159,7 @@ const Products = () => {
 
           {/* Know More */}
           <motion.div
-            className="flex items-center  gap-4 pt-8"
+            className="flex items-center gap-4 lg:pt-8"
             variants={itemVariants}
           >
             <motion.div
@@ -206,7 +205,7 @@ const Products = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center md:mt-32">
         {/* Image Section */}
         <motion.div
           className="relative order-2 md:order-1"
@@ -260,12 +259,11 @@ const Products = () => {
           viewport={{ once: true }}
         >
           <motion.h3
-            className="text-2xl md:text-4xl  md:-mt-12 font-bold"
+            className="text-2xl md:text-3xl  md:-mt-12 font-bold"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
             Empowering Health Journeys <br />
-            <span className="h-1 w-1"></span>
             <br />
             Nurturing Health Through Innovation
           </motion.h3>
@@ -286,7 +284,7 @@ const Products = () => {
 
           {/* Know More */}
           <motion.div
-            className="flex items-center  gap-4 pt-8"
+            className="flex items-center gap-4 lg:pt-8"
             variants={itemVariants}
           >
             <motion.div
