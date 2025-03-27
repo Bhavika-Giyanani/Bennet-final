@@ -1,4 +1,4 @@
-export default {
+const productPageSchema = {
   name: "productpage",
   title: "Product Page",
   type: "document",
@@ -72,3 +72,5 @@ export default {
     },
   ],
 };
+
+export default productPageSchema;

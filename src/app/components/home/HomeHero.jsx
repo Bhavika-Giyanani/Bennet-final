@@ -15,7 +15,7 @@ const HomeHero = () => {
         viewport={{ once: true }}
       >
         {/* Circular Icon */}
-        <motion.div
+        {/* <motion.div
           className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-[#AECA1D] rounded-full flex items-center justify-center border-4 border-white shadow-lg z-20"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ const HomeHero = () => {
           }}
         >
           <Image src="/tab.svg" alt="tab" width={400} height={400} className="rotate-90"/>
-        </motion.div>
+        </motion.div> */}
 
         {/* Background decorative circles */}
         <div className="absolute top-1/2 right-10 w-32 h-32 bg-blue-50/50 rounded-full blur-2xl" />

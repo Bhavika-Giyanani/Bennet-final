@@ -59,13 +59,15 @@ const ImgHero = () => {
   };
 
   return (
-    <motion.section
-      className="relative container flex items-center mt-[96px] "
-      initial="hidden"
-      animate="visible"
-      exit="hidden"
-      viewport={{ once: true }}
-    >
+<motion.section
+  className=" relative container flex items-center mt-[96px]"
+  initial="hidden"
+  animate="visible"
+  exit="hidden"
+  viewport={{ once: true }}
+  style={{ fontFamily: "Poppins, sans-serif"}}
+>
+
       <div className="w-full max-w-[1440px] mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 ">
           <motion.div

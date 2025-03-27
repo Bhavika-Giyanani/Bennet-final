@@ -2,6 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import ImgHero from "./components/home/ImgHero";
+import ImgHero2 from "./components/home/ImgHero2";
+import ImgHero3 from "./components/home/ImgHero3";
+import ImgHero4 from "./components/home/ImgHero4";
 import ImageMarquee from "./components/home/ImageMarquee";
 import Stats from "./components/home/Stats";
 import Cards from "./components/home/Cards";
@@ -18,6 +21,9 @@ const Home = () => {
     <>
       <div className="overflow-x-hidden">
         <ImgHero />
+        <ImgHero2 />
+        <ImgHero3 />
+        <ImgHero4 />
         <HomeHero />
         <Cards />
         <Stats />
