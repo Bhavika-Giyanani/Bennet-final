@@ -49,13 +49,17 @@ export default function Header() {
     {
       name: "About",
       href: "/about",
+    },
+    { name: "Our Capabilities", 
+      href: "/products" ,
       dropdown: [
-        { name: "Core Values", href: "/about#Values" },
-        { name: "Leadership", href: "/about#Leaders" },
+        { name: "Innovation", href: "/products#Innovation" },
+        { name: "Manufacturing", href: "/manufacturing" },
+        { name: "Products", href: "/products#Products" },
+        { name: "Network", href: "/products#Network" },
       ],
     },
-    { name: "Our Products", href: "/products" },
-    { name: "Manufacturing", href: "/manufacturing" },
+
     { name: "Life At Bennet", href: "/life-at-bennet" },
     { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact" },

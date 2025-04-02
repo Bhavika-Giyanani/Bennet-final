@@ -100,7 +100,7 @@ const ImgHero = () => {
                   variants={accentTextHoverVariants}
                   className="text-[#AECA1D] inline-block cursor-default"
                 >
-                  Wellness.
+                  Healthcare.
                 </motion.span>
               </div>
 

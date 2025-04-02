@@ -1,9 +1,8 @@
 import Innovation from "@/app/components/products/Innovation";
 import ProductCards from "@/app/components/products/ProductCards";
 import ProductHero2 from "@/app/components/products/ProductHero2";
-import ProductHero3 from "@/app/components/products/ProductHero3";
 import { getProductPage } from "@/sanity/lib/queries";
-
+import Network from "@/app/components/products/Network";
 import React from "react";
 
 const Products = async () => {
@@ -11,10 +10,11 @@ const Products = async () => {
 
   return (
     <>
-      <ProductHero2 />
-      <ProductHero3 />
+      <div id="Innovation"> <Innovation />  </div>
+      <div id="Products">  <ProductHero2 /> </div>
       <ProductCards />
-      <Innovation />
+      <div id="Network">  <Network /> </div>
+
     </>
   );
 };

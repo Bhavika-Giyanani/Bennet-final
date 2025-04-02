@@ -47,7 +47,7 @@ const HomeHero = () => {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            Our Legacy of Care: A Journey Since 1996
+            Our Journey 
           </motion.h2>
 
           <div className="absolute ">
@@ -71,11 +71,9 @@ const HomeHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              Since 1996, we've been dedicated to enriching the lives of our
-              citizens with the power of good health. Our journey has been one
-              of unwavering commitment to providing quality healthcare solutions
-              that inspire trust and confidence. At Bennet, we're more than just
-              a pharmaceutical company, we're a catalyst for positive change.
+             For 3 decades, we've been dedicated to enriching the lives of our citizens with the power of good health.
+              Our journey has been one of unwavering commitment to providing quality healthcare solutions that inspire trust and confidence.
+               At Bennet, we're more than just a pharmaceutical company, we're a catalyst for positive change.
             </motion.p>
 
             <motion.p
@@ -84,13 +82,10 @@ const HomeHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              We're passionate about empowering caregivers, ensuring that vital
-              care reaches every corner of India, and making a lasting impact on
-              the well-being of our people. From our manufacturing facilities to
-              our extensive distribution network, we're commited to delivering
-              excellence in pharmaceuticals. We believe in the transformative
-              power of healthcare and are determined to create a brighter,
-              healthier futture for all.
+              We're passionate about empowering caregivers, ensuring that vital care reaches every corner of India, 
+              and making a lasting impact on the well-being of our people. From our manufacturing facilities to our
+               extensive distribution network, we're committed to delivering excellence in pharmaceuticals. We believe in the transformative
+                power of healthcare and are determined to create a brighter, healthier future for all.
             </motion.p>
 
             <motion.p

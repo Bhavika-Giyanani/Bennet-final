@@ -50,12 +50,7 @@ const ProductHero = ({ data }) => {
               Empowering
             </div>
             <div className="flex flex-wrap">
-              <span className="mr-2">Health</span>
-              <span>Journeys &</span>
-            </div>
-            <div>
-              Nurturing Health Through{" "}
-              <span className="text-[#AECA1D]">Innovation</span>
+              <span className="mr-2">lives and affordability</span>
             </div>
           </motion.h1>
 

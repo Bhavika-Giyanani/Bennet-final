@@ -69,27 +69,22 @@ const Cards = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
         >
-          Our Commitment to the Nation
+          Our Commitment
         </motion.h2>
 
         <motion.p
           className="text-xl md:text-2xl max-w-4xl mx-auto text-start"
           variants={itemVariants}
         >
-          We provide high-quality healthcare solutions, at prices that are
-          accessible to all. <br />
+          We are committed to serving the healthcare needs of our nation. As a Pharmaceutical company, we pledge to deliver high-quality,
+           affordable medicines that improve lives and address unmet medical needs. We are dedicated to investing in formulation development, 
+           fostering innovation, and promoting healthcare education and awareness. <br />
+        
 
           <span className="h-1 w-1"></span><br/>
 
-          Our team upholds the highest standards of ethical practices, with
-          certifications and strict adherence to regulatory standards, ensuring
-          your well-being in every interaction.<br/>
-
-          <span className="h-1 w-1"></span><br/>
-
-          We offer tailored solutions through our three core divisions: Ethical, Critical
-          Care, and the Emiror Division, bringing specialized and innovative
-          care to those who need it most.<br />
+          Through our unwavering commitment to quality, integrity, and patient-centricity, we aim to make a positive impact
+           on the health and well-being of our nation, and contribute to the country's journey towards a healthier tomorrow.<br />
 
          
         </motion.p>

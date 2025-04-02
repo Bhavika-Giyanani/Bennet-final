@@ -50,7 +50,7 @@ export default function Manufacturing() {
         <HeroSection
           imageLink={heroImage}
           moldLink="/manufacturingmold.png"
-          title='Empowering Trust , Together we deliver  <span className="text-[#9DC41A]">quality</span>'
+          title='Empowering Trust, Together we deliver  <span className="text-[#9DC41A]">quality</span>'
           description="Where excellence meets accessibility"
           knowMoreLink="#manufacturing"
         />

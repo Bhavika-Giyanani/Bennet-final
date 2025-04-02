@@ -57,15 +57,11 @@ const ProductHero2 = () => {
             variants={leftItemVariants}
           >
             <div className="text-[#AECA1D] mt-10 sm:mt-0 md:-mt-8 ">
-              Empowering
+              Empoweringgg
             </div>
             <div className="flex flex-wrap">
-              <span className="mr-2">Health</span>
-              <span>Journeys &</span>
-            </div>
-            <div>
-              Nurturing Health Through{" "}
-              <span className="text-[#AECA1D]">Innovation</span>
+              <span className="mr-2">lives and </span>
+              <span>affordability</span>
             </div>
           </motion.h1>
 

@@ -34,24 +34,19 @@ const Commitment = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold md:w-1/3">
-              Our Commitment to the Nation
+              Our Commitment
             </h2>
             <p className="text-lg md:text-xl text-gray-100 md:w-1/2">
-              We provide high-quality healthcare solutions, at prices that are
-              accessible to all.  Our team upholds the highest standards of ethical practices, with
-              certifications and strict adherence to regulatory standards,
-              ensuring your well-being in every interaction.
+            We are committed to serving the healthcare needs of our nation. As a Pharmaceutical company, we pledge to deliver high-quality, 
+            affordable medicines that improve lives and address unmet medical needs. We are dedicated to investing in formulation development,
+             fostering innovation, and promoting healthcare education and awareness.
               <br className="hidden md:block" />
 
 
              <br/>
-
-              We offer tailored solutions through our three core divisions: Ethical, Critical Care, and the Emiror Division, bringing specialized and innovative care to those who need it most.
-        <br/>
-              We collaborate with over 500 passionate sales personnel and a network of 1,000+ distributors, ensuring consistent access to care across the country with a presence in 15+ states.
-              <br/><span className="h-1 w-1"></span><br/>
-              With over 100,000 retail outlets nationwide, we bring superior healthcare solutions within easy reach for everyone. We believe in the transformative power of healthcare
-             <br/>
+             Through our unwavering commitment to quality, integrity, and patient-centricity, we aim to make a positive impact on the health
+              and well-being of our nation, and contribute to the country's journey towards a healthier tomorrow.  
+          
             </p>
             
           </motion.div>

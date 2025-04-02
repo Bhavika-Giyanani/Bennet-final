@@ -8,7 +8,7 @@ const Innovation = () => {
       <div className="flex flex-col space-y-8 md:space-y-14">
         {/* Header with line */}
         <motion.div
-          className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
+          className="flex justify-start  mt-[7rem] md:justify-center md:gap-0 lg:gap-0 items-center   md:mt-[7rem] overflow-hidden"
           initial={{ opacity: 0, x: -70 }}
           whileInView={{
             opacity: 1,
@@ -18,7 +18,7 @@ const Innovation = () => {
           viewport={{ once: true, amount: 0.9 }}
         >
           <motion.h2
-            className="w-3/5 ml-4 md:ml-0 md:w-[60%] lg:w-[50%] text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
+            className="w-3/5 ml-4 md:ml-0 md:w-[60%] lg:w-[50%]  text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{
               opacity: 1,

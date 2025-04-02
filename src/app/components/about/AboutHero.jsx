@@ -115,7 +115,7 @@ const AboutHero = () => {
                   transition: { duration: 0.3, ease: "easeInOut" },
                 }}
               >
-                Transforming Lives Since 1996.
+                Transforming Lives Since 3 decades.
               </motion.p>
             </div>
 

@@ -10,8 +10,7 @@ export default function Footer() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Our Products", href: "/products" },
-    { name: "Manufacturing", href: "/manufacturing" },
+    { name: "Our Capabilities", href: "/products" },
     { name: "Life At Bennet", href: "/life-at-bennet" },
     { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact" },
@@ -90,7 +89,7 @@ export default function Footer() {
           <div className="flex flex-col md:items-center md:text-center space-y-6">
             <div className="md:text-center">
               <h3 className="text-lg font-bold mb-6">Connect With Us</h3>
-              <div className="flex flex-col space-y-2 xl:ml-20">
+              <div className="flex flex-col space-y-2 md:ml-20 xl:ml-20">
                 <div className="flex space-x-2 items-center ml-2">
                   <FaLinkedin className="w-5 h-5 text-[#9DC41A]" />
                   <a href="https://www.linkedin.com" className="text-sm">
@@ -99,7 +98,7 @@ export default function Footer() {
                 </div>
                 <div className="flex space-x-2 items-center ml-2">
                   <EmailIcon className="w-4 h-4 text-[#9DC41A]" />
-                  <p className="text-sm">cm@bennetpharmaceuticals.com</p>
+                  <p className="text-sm flex flex-wrap">cm@bennetpharmaceuticals.com</p>
                 </div>
                 <div className="flex space-x-2 items-center ml-2">
                   <EmailIcon className="w-4 h-4 text-[#9DC41A]" />

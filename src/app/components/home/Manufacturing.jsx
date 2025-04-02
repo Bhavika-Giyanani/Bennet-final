@@ -39,9 +39,7 @@ const Network = () => {
           }}
           viewport={{ once: true }}
         >
-          OUR MANUFACTURING
-          <br className="block" />
-          NETWORK
+          MANUFACTURING
         </motion.h2>
 
         <motion.div
@@ -58,6 +56,18 @@ const Network = () => {
         </motion.div>
 
       </motion.div>
+
+          {/* Subheading */}
+          <motion.h2
+        className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mt-8 md:mt-12 leading-tight"
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInUp}
+        transition={{ delay: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        Empowering lives and affordability
+      </motion.h2>
 
       {/* Subheading */}
       <motion.h2

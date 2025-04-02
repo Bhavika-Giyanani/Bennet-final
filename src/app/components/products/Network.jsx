@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 // Utility function for Indian number formatting
 const formatNumber = (num) => {
@@ -188,7 +187,7 @@ const Stats = () => {
 
       {/* Text 2 */}
       <motion.p
-        className="text-4xl px-4 font-semibold text-black mx-auto container lg:max-w-4xl  mt-16 mb-6"
+        className="text-4xl px-4 font-semibold text-black mx-auto container lg:max-w-4xl  mt-16 mb-16"
         variants={itemVariants}
       >
         Join us on our mission to empower individuals and communities through
@@ -196,7 +195,7 @@ const Stats = () => {
       </motion.p>
 
       {/* Know More Button */}
-      <motion.div
+      {/* <motion.div
         className="flex items-center justify-center gap-4 pt-8"
         variants={itemVariants}
       >
@@ -240,7 +239,9 @@ const Stats = () => {
             </motion.span>
           </Link>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
+
+      
     </>
   );
 };

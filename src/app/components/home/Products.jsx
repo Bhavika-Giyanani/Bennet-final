@@ -97,7 +97,7 @@ const Products = () => {
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">
                 <div
-                  className="w-full h-full md:w-[550px] md:h-[500px] md:mt-16 rounded-[2rem] hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full md:w-[550px] md:h-[500px] rounded-[2rem] hover:scale-105 transition-transform duration-300"
                   style={{
                     maskImage: "url('/homeproductmold.png')",
                     WebkitMaskImage: "url('/homeproductmold.png')",
@@ -153,8 +153,16 @@ const Products = () => {
             <motion.p variants={fadeInUp} transition={{ delay: 0.3 }}>
               Our broad product portfolio meets the diverse needs of healthcare
               professionals and patients alike, ensuring accessibility and
-              reliability in every product we offer.
+              reliability in every product.
             </motion.p>
+
+            
+            <motion.p variants={fadeInUp} transition={{ delay: 0.3 }}>
+            We offer tailored solutions through our three core divisions: <span className="font-bold text-black" >Main, Critical Care</span>
+            , and the <span className="font-bold text-black" > Emiror Division</span>, 
+            bringing specialized and innovative care to those who need it most.
+            </motion.p>
+
           </div>
 
           {/* Know More */}
@@ -222,7 +230,7 @@ const Products = () => {
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">
                 <div
-                  className="w-full h-full md:w-[550px] md:h-[500px] md:mt-16 rounded-[2rem] hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full md:w-[550px] md:h-[500px]  rounded-[2rem] hover:scale-105 transition-transform duration-300"
                   style={{
                     maskImage: "url('/homeproductmold.png')",
                     WebkitMaskImage: "url('/homeproductmold.png')",
@@ -263,9 +271,7 @@ const Products = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
-            Empowering Health Journeys <br />
-            <br />
-            Nurturing Health Through Innovation
+            Empowering lives and affordability <br />
           </motion.h3>
 
           <div className="space-y-4 md:space-y-6 text-base md:text-xl text-gray-700">
@@ -278,8 +284,15 @@ const Products = () => {
             <motion.p variants={fadeInUp} transition={{ delay: 0.3 }}>
               Our broad product portfolio meets the diverse needs of healthcare
               professionals and patients alike, ensuring accessibility and
-              reliability in every product we offer.
+              reliability in every product.
             </motion.p>
+
+            <motion.p variants={fadeInUp} transition={{ delay: 0.3 }}>
+            We offer tailored solutions through our three core divisions: <span className="font-bold text-black" >Main, Critical Care</span>
+            , and the <span className="font-bold text-black" > Emiror Division</span>, 
+            bringing specialized and innovative care to those who need it most.
+            </motion.p>
+
           </div>
 
           {/* Know More */}
@@ -331,42 +344,8 @@ const Products = () => {
         </motion.div>
       </div>
 
-      {/* Our Innovation */}
-      <motion.div
-        className="mt-10 md:mt-16 space-y-6 md:space-y-8"
-        variants={fadeInUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <div className="bg-black text-white rounded-xl md:rounded-2xl p-6  md:px-12 grid md:grid-cols-2 gap-6 md:gap-8 items-center hover:scale-[1.01] transition-transform duration-300">
-          <h3 className="text-3xl font-bold">Our Innovation</h3>
-          <p className="text-base md:text-xl text-gray-400">
-            <span className="text-white text-xl font-semibold">PATENT </span>{" "}
-            granted for enhancing the bioavailability of highly unstable
-            molecule{" "}
-            <span className="text-white text-xl font-semibold">
-              {" "}
-              LACTOFERRIN{" "}
-            </span>{" "}
-            by salt technology.
-            <br />
-            <span className="h-1 w-1"></span>
-            <br />
-            Innovation research done in collaboration with{" "}
-            <span className="text-white text-xl font-semibold">
-              {" "}
-              NIPER-A{" "}
-            </span>{" "}
-            for
-            <span className="text-white text-xl font-semibold">
-              {" "}
-              SILVER NANOMIX PARTICLES{" "}
-            </span>{" "}
-            .
-          </p>
-        </div>
-      </motion.div>
+
+
     </section>
   );
 };
