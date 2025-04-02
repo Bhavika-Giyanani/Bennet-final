@@ -41,7 +41,7 @@ const Products = () => {
   };
 
   return (
-    <section className="container mx-auto mt-12 md:mt-20 px-4">
+    <section className="container mx-auto mt-12 md:mt-20 mb-16 md:mb-6 px-4">
       {/* Header with line */}
       <motion.div
         className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
@@ -80,6 +80,8 @@ const Products = () => {
       </motion.div>
 
       {/* Main Content */}
+
+      {/* Part 1 */}
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Image Section */}
         <motion.div
@@ -92,7 +94,7 @@ const Products = () => {
           <div className="relative mx-4 md:mx-0">
             {/* Decorative Shapes - Responsive sizes */}
             <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 md:w-40 h-24 md:h-40 rounded-full bg-[#AECA1D]/10 -z-10" />
-            <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 rounded-full bg-[#2C3D5A]/10 -z-10" />
+            <div className="absolute -bottom-6 md:bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 2xl:bottom-32 2xl:right-16 rounded-full bg-[#2C3D5A]/10 -z-10" />
             {/* Image container */}
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">
@@ -213,6 +215,8 @@ const Products = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Part 2 */}
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center md:mt-32">
         {/* Image Section */}
         <motion.div
@@ -225,7 +229,7 @@ const Products = () => {
           <div className="relative mx-4 md:mx-0">
             {/* Decorative Shapes - Responsive sizes */}
             <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 md:w-40 h-24 md:h-40 rounded-full bg-[#AECA1D]/10 -z-10" />
-            <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 rounded-full bg-[#2C3D5A]/10 -z-10" />
+            <div className="absolute -bottom-6 md:bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 2xl:bottom-32 2xl:right-16 rounded-full bg-[#2C3D5A]/10 -z-10" />
             {/* Image container */}
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">

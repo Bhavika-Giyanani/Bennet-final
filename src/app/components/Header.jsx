@@ -44,6 +44,17 @@ export default function Header() {
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
+  // Add this useEffect to handle responsive dropdown behavior
+useEffect(() => {
+  const handleResponsiveChange = () => {
+    // Close dropdown when window size changes across breakpoints
+    setIsDropdownOpen(false);
+  };
+  
+  window.addEventListener("resize", handleResponsiveChange);
+  return () => window.removeEventListener("resize", handleResponsiveChange);
+}, []);
+
   const navigation = [
     { name: "Home", href: "/" },
     {
@@ -51,7 +62,7 @@ export default function Header() {
       href: "/about",
     },
     { name: "Our Capabilities", 
-      href: "/ourcapabilities",
+      href: "",
       dropdown: [
         { name: "Innovation", href: "/ourcapabilities#Innovation" },
         { name: "Manufacturing", href: "/manufacturing" },
@@ -133,28 +144,23 @@ export default function Header() {
               >
                 {item.dropdown ? (
                   <div className="relative dropdown-container">
-                    <div className="flex items-center cursor-pointer">
-                      <Link
-                        href={item.href} // Navigate to /about
+                    <div 
+                      className="flex items-center cursor-pointer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsDropdownOpen(!isDropdownOpen);
+                      }}
+                    >
+                      <span
                         className={`lg:text-[1rem] md:text-[0.6rem] font-medium transition-colors duration-200 ${
                           pathname === item.href
                             ? "text-[#AECA1D]"
                             : "text-slate-700 hover:text-[#AECA1D]/80"
-                        } ${item.name === "Our Capabilities" ? "md:mt-2 lg:mt-0" : ""}`} // Add mt-2 only on md screens, remove on lg+
+                        } ${item.name === "Our Capabilities" ? "md:mt-2 lg:mt-0" : ""}`}
                       >
                         {item.name}
-                      </Link>
-                      <button
-                        className={`ml-1 focus:outline-none ${
-                          item.name === "About" ? "md:mt-2 lg:mt-0" : ""
-                        }`} // Add mt-2 only on md screens, remove on lg+
-                        onClick={(e) => {
-                          e.stopPropagation(); // Prevent click from propagating to the link
-                          setIsDropdownOpen(!isDropdownOpen);
-                        }}
-                      >
-                        <ChevronDown size={16} className="md:mt-2 lg:mt-0" />
-                      </button>
+                      </span>
+                      <ChevronDown size={16} className="ml-1 md:mt-2 lg:mt-0" />
                     </div>
                     {isDropdownOpen && (
                       <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md overflow-hidden z-10">
@@ -240,9 +246,14 @@ export default function Header() {
                 >
                   {item.dropdown ? (
                     <div className="dropdown-container">
-                      <div className="flex  items-center">
-                        <Link
-                          href={item.href}
+                      <div 
+                        className="flex items-center cursor-pointer"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsDropdownOpen(!isDropdownOpen);
+                        }}
+                      >
+                        <span
                           className={`block py-2 text-base font-medium transition-colors duration-200 ${
                             pathname === item.href
                               ? "text-[#AECA1D]"
@@ -250,16 +261,8 @@ export default function Header() {
                           }`}
                         >
                           {item.name}
-                        </Link>
-                        <button
-                          className="ml-1 mt-1"
-                          onClick={(e) => {
-                            e.stopPropagation(); // Prevent click from propagating to the link
-                            setIsDropdownOpen(!isDropdownOpen);
-                          }}
-                        >
-                          <ChevronDown size={16} />
-                        </button>
+                        </span>
+                        <ChevronDown size={16} className="ml-1 mt-1" />
                       </div>
                       {isDropdownOpen && (
                         <div className="pl-4">

@@ -284,7 +284,7 @@ export default function Manufacturing() {
                 }}
                 viewport={{ once: true }}
               >
-                Our Manufacturing Network
+              Manufacturing
               </motion.h2>
 
               <div className="w-full  mt-2">
@@ -434,7 +434,7 @@ export default function Manufacturing() {
       >
         <div className="container mx-auto bg-[#D7E48E] rounded-2xl">
           <div className="flex flex-col md:flex-row items-center justify-between p-6 w-[3/4]">
-            <h3 className="text-center font-bold text-2xl m:text-3xl lg:text-3xl xl:text-4xl">
+            <h3 className="text-center  md:max-w-60 lg:max-w-full font-bold text-2xl lg:text-3xl xl:text-4xl">
               To know more about us Contact at
             </h3>
             <div className="text-center md:text-left text-lg lg:text-2xl">
@@ -504,12 +504,12 @@ export default function Manufacturing() {
 
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
 
-            <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-6 rounded-2xl">
+            <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 md:px-0 lg:px-8 py-6 rounded-2xl">
               <div className="h-full flex items-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
                   <div className="space-y-8">
                     <div className="space-y-4">
-                      <h1 className="text-7xl font-bold text-white leading-tight">
+                      <h1 className=" text-5xl md:text-7xl font-bold text-white leading-tight">
                         Advancing Global Healthcare
                       </h1>
                       <div className="w-24 h-2 bg-white rounded-full" />
