@@ -50,8 +50,8 @@ export default function Manufacturing() {
         <HeroSection
           imageLink={heroImage}
           moldLink="/manufacturingmold.png"
-          title='Empowering Trust , Together we deliver  <span className="text-[#9DC41A]">quality</span>'
-          description="Where excellence meets accessibility"
+          title='<span className="text-[#9DC41A]">Empowering</span> Trust, Together we deliver  <span className="text-[#9DC41A]">quality</span>'
+          // description="Where excellence meets accessibility"
           knowMoreLink="#manufacturing"
         />
       </div>
@@ -293,7 +293,7 @@ export default function Manufacturing() {
             </motion.div>
           )}
 
-          <motion.h3
+          <motion.p
             className="text-2xl md:max-w-[60rem]  md:text-4xl lg:text-6xl xl:text-7xl font-bold mb-8 lg:leading-[4.5rem] xl:leading-[5.714rem]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -317,7 +317,7 @@ export default function Manufacturing() {
                 {text}
               </motion.span>
             ))}
-          </motion.h3>
+          </motion.p>
 
           {/* Map */}
           <div className=" ">

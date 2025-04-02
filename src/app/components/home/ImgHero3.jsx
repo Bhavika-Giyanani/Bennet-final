@@ -139,8 +139,8 @@ const ImgHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              Dedicated to wellness since 1996
-            </motion.p>
+              Dedicated to wellness since 3 decades
+              </motion.p>
 
             <motion.div variants={leftItemVariants}>
               <div className=" md:-ml-2 lg:-ml-0 mt-4">

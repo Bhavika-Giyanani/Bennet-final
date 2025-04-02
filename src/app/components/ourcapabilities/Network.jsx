@@ -105,7 +105,7 @@ const Stats = () => {
       </motion.p>
 
       {/* Card */}
-      <section className="container mx-auto px-4 py-16 my-10">
+      <section className="container mx-auto px-4 pt-16 pb-24 my-10">
         <motion.div
           className="relative rounded-[2rem] bg-[#D7E48E] border border-black flex flex-col md:flex-row items-center justify-between py-20 md:py-24 px-8 md:px-20"
           variants={containerVariants}
@@ -185,61 +185,7 @@ const Stats = () => {
         </motion.div>
       </section>
 
-      {/* Text 2 */}
-      <motion.p
-        className="text-4xl px-4 font-semibold text-black mx-auto container lg:max-w-4xl  mt-16 mb-16"
-        variants={itemVariants}
-      >
-        Join us on our mission to empower individuals and communities through
-        trusted healthcare.
-      </motion.p>
-
-      {/* Know More Button */}
-      {/* <motion.div
-        className="flex items-center justify-center gap-4 pt-8"
-        variants={itemVariants}
-      >
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.98 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Link
-            href="/about"
-            className="bg-[#83961D] text-white text-xl font-medium px-8 py-2 rounded-full transition-all duration-300 hover:bg-[#96ac22] hover:shadow-lg"
-          >
-            Know More
-          </Link>
-        </motion.div>
-
-        <motion.div
-          whileHover={{
-            x: 10,
-            scale: 1.1,
-            transition: { duration: 0.2 },
-          }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link
-            href="/about"
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black text-white text-2xl transition-all duration-300 hover:bg-gray-900 hover:shadow-lg"
-          >
-            <motion.span
-              className="text-xs"
-              whileHover={{
-                x: 3,
-                transition: {
-                  duration: 0.2,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                },
-              }}
-            >
-              →
-            </motion.span>
-          </Link>
-        </motion.div>
-      </motion.div> */}
+  
 
       
     </>

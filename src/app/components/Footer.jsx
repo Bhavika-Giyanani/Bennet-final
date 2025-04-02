@@ -10,7 +10,7 @@ export default function Footer() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Our Capabilities", href: "/products" },
+    { name: "Our Capabilities", href: "/ourcapabilities" },
     { name: "Life At Bennet", href: "/life-at-bennet" },
     { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact" },

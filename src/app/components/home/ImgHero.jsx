@@ -68,6 +68,8 @@ const ImgHero = () => {
     >
       <div className="w-full max-w-[1440px] mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 ">
+        
+        {/* Left Side */}
           <motion.div
             className="w-full md:w-1/2 space-y-6"
             variants={leftContentVariants}
@@ -138,7 +140,7 @@ const ImgHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              Dedicated to wellness since 1996
+              Dedicated to wellness since 3 decades
             </motion.p>
 
             <motion.div variants={leftItemVariants}>
@@ -155,7 +157,8 @@ const ImgHero = () => {
               </div>
             </motion.div>
           </motion.div>
-
+          
+          {/* Right Side */}
           <motion.div
             className="w-full md:w-1/2 h-[400px] md:h-[500px]"
             variants={rightImageVariants}
@@ -196,6 +199,7 @@ const ImgHero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem]" />
             </div>
           </motion.div>
+
         </div>
       </div>
     </motion.section>

@@ -51,12 +51,12 @@ export default function Header() {
       href: "/about",
     },
     { name: "Our Capabilities", 
-      href: "/products" ,
+      href: "/ourcapabilities",
       dropdown: [
-        { name: "Innovation", href: "/products#Innovation" },
+        { name: "Innovation", href: "/ourcapabilities#Innovation" },
         { name: "Manufacturing", href: "/manufacturing" },
-        { name: "Products", href: "/products#Products" },
-        { name: "Network", href: "/products#Network" },
+        { name: "Products", href: "/products" },
+        { name: "Network", href: "/ourcapabilities#Network" },
       ],
     },
 
@@ -140,7 +140,7 @@ export default function Header() {
                           pathname === item.href
                             ? "text-[#AECA1D]"
                             : "text-slate-700 hover:text-[#AECA1D]/80"
-                        } ${item.name === "About" ? "md:mt-2 lg:mt-0" : ""}`} // Add mt-2 only on md screens, remove on lg+
+                        } ${item.name === "Our Capabilities" ? "md:mt-2 lg:mt-0" : ""}`} // Add mt-2 only on md screens, remove on lg+
                       >
                         {item.name}
                       </Link>
@@ -153,7 +153,7 @@ export default function Header() {
                           setIsDropdownOpen(!isDropdownOpen);
                         }}
                       >
-                        <ChevronDown size={16} />
+                        <ChevronDown size={16} className="md:mt-2 lg:mt-0" />
                       </button>
                     </div>
                     {isDropdownOpen && (

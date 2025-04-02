@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { getManufacturingPage } from "@/sanity/lib/queries";
 
-const DynamicWorldMap = dynamic(() => import("../../components/worldMap"), {
+const DynamicWorldMap = dynamic(() => import("../worldMap"), {
   ssr: false,
 });
 
