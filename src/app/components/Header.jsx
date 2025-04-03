@@ -151,15 +151,15 @@ useEffect(() => {
                         setIsDropdownOpen(!isDropdownOpen);
                       }}
                     >
-                      <span
-                        className={`lg:text-[1rem] md:text-[0.6rem] font-medium transition-colors duration-200 ${
-                          pathname === item.href
-                            ? "text-[#AECA1D]"
-                            : "text-slate-700 hover:text-[#AECA1D]/80"
-                        } ${item.name === "Our Capabilities" ? "md:mt-2 lg:mt-0" : ""}`}
-                      >
-                        {item.name}
-                      </span>
+                     <span
+  className={`lg:text-[1rem] md:text-[0.6rem] font-medium transition-colors duration-200 ${
+    pathname === item.href || item.dropdown?.some(subItem => pathname === subItem.href)
+      ? "text-[#AECA1D]"
+      : "text-slate-700 hover:text-[#AECA1D]/80"
+  } ${item.name === "Our Capabilities" ? "md:mt-2 lg:mt-0" : ""}`}
+>
+  {item.name}
+</span>
                       <ChevronDown size={16} className="ml-1 md:mt-2 lg:mt-0" />
                     </div>
                     {isDropdownOpen && (
@@ -173,6 +173,7 @@ useEffect(() => {
                                 ? "text-[#AECA1D]"
                                 : "text-gray-700 hover:bg-gray-100"
                             }`}
+                            onClick={() => setIsDropdownOpen(false)}
                           >
                             {subItem.name}
                           </Link>
@@ -275,7 +276,8 @@ useEffect(() => {
                                   ? "text-[#AECA1D]"
                                   : "hover:text-gray-400"
                               }`}
-                              onClick={() => setIsMenuOpen(false)}
+                              onClick={ 
+                                () => setIsMenuOpen(false)}
                             >
                               {subItem.name}
                             </Link>
@@ -291,7 +293,7 @@ useEffect(() => {
                           ? "text-[#AECA1D]"
                           : "hover:text-gray-400"
                       }`}
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={() => {setIsMenuOpen(false);    setIsDropdownOpen(false); }}
                     >
                       {item.name}
                     </Link>
