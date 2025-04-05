@@ -123,11 +123,11 @@ useEffect(() => {
           >
             <Link href="/" className="flex items-center">
               <Image
-                src="/bennet-2.png"
+                src="/bennet-3.png"
                 alt="Bennet Pharmaceuticals Ltd."
                 width={150}
-                height={40}
-                className="h-10 w-auto"
+                height={50}
+                className="h-14 w-auto"
               />
             </Link>
           </motion.div>

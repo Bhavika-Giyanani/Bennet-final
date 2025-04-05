@@ -181,7 +181,7 @@ style={{ fontFamily: "DidotProBold, serif"}}
                   WebkitMaskSize: "100% 150%",
                   maskPosition: "center",
                   WebkitMaskPosition: "center",
-                  backgroundImage: `url(${heroImage})`,
+                  backgroundImage: "url(/heroOption3.jpeg)",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   maskRepeat: "no-repeat",

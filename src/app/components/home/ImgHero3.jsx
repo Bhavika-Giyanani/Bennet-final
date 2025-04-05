@@ -180,7 +180,7 @@ const ImgHero = () => {
                   WebkitMaskSize: "100% 150%",
                   maskPosition: "center",
                   WebkitMaskPosition: "center",
-                  backgroundImage: `url(${heroImage})`,
+                  backgroundImage: "url(/heroOption2.jpeg)",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   maskRepeat: "no-repeat",
