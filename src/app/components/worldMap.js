@@ -43,11 +43,11 @@ const MapComponent = () => {
 
   return (
     <div
-      className="relative border-2 border-x-0 xl:border-x-2 border-gray-300 z-0 flex flex-col md:flex-row h-auto md:h-[698px]  lg:h-[568px] xl:h-[508px] 2xl:h-[450px]
+      className="relative border-2 border-x-0 xl:border-x-2 border-gray-300 z-0 flex flex-col md:flex-row h-auto md:h-[698px]  lg:h-[768px] xl:h-[538px] 2xl:h-[450px]
      w-full lg:max-w-[1100px] 2xl:max-w-[1400px] mx-auto mt-8 bg-gray-100 shadow-xl rounded-2xl overflow-hidden"
     >
       {/* Left Side */}
-      <div className="w-full md:w-1/2 h-[360px]  md:h-full relative p-6">
+      <div className="w-full md:w-1/2 h-[364px]  md:h-full relative p-6">
         <MapContainer
           center={[26, 80.5]}
           zoom={5.2}

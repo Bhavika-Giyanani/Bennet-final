@@ -40,14 +40,43 @@ const Innovation = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-       <motion.h2
-              className="text-3xl md:text-4xl font-bold lg:max-w-4xl"
-              variants={itemVariants}
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              OUR CAPABILITIES 
-            </motion.h2>
+         <motion.div
+        className="flex justify-start lg:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
+        initial={{ opacity: 0, x: -70 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 1, ease: "easeOut" },
+        }}
+        viewport={{ once: true, amount: 0.9 }}
+      >
+        <motion.h2
+          className="didot w-3/5 md:w-[60%] lg:w-[50%] text-white text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-stroke-black"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }}
+          viewport={{ once: true }}
+        >
+          OUR CAPABILITIES
+        </motion.h2>
+
+        <motion.div
+          className="w-0 text-left md:w-[0%] lg:w-[50%] mt-2"
+          initial={{ opacity: 0, x: 70 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }}
+          viewport={{ once: true }}
+        >
+          <hr className="border-t-2 border-[#AECA1D]" />
+        </motion.div>
+
+      </motion.div>
 
         <div className="bg-black text-white rounded-xl md:rounded-2xl p-6  md:px-12 grid md:grid-cols-2 gap-6 md:gap-8 items-center hover:scale-[1.01] transition-transform duration-300">
           <h3 className="text-3xl font-bold">Innovation</h3>

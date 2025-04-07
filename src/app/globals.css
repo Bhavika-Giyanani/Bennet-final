@@ -52,6 +52,10 @@ body {
   font-display: swap;
 }
 
+.didot {
+  font-family: 'DidotProBold', serif;
+}
+
 .excellence-bg {
   background-image: url("/excellence.png");
   background-repeat: no-repeat;

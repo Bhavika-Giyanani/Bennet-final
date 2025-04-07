@@ -80,18 +80,47 @@ const Stats = () => {
 
   return (
     <>
-        <motion.h2
-          className="container text-3xl md:text-4xl font-bold lg:max-w-4xl"
-          variants={itemVariants}
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.3 }}
-        >
-          Network
-        </motion.h2>
+           <motion.div
+              className="flex container justify-start lg:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
+              initial={{ opacity: 0, x: -70 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { duration: 1, ease: "easeOut" },
+              }}
+              viewport={{ once: true, amount: 0.9 }}
+            >
+              <motion.h2
+                className=" didot w-3/5 md:w-[60%] lg:w-[50%] text-white text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { duration: 1, ease: "easeOut" },
+                }}
+                viewport={{ once: true }}
+              >
+                NETWORK
+              </motion.h2>
+      
+              <motion.div
+                className="w-0 text-left md:w-[0%] lg:w-[50%] mt-2"
+                initial={{ opacity: 0, x: 70 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { duration: 1, ease: "easeOut" },
+                }}
+                viewport={{ once: true }}
+              >
+                <hr className="border-t-2 border-[#AECA1D]" />
+              </motion.div>
+      
+            </motion.div>
 
       {/* Text */}
       <motion.p
-        className="text-xl container px-4 md:text-2xl text-black lg:max-w-4xl mx-auto text-start mt-14 mb-6"
+        className="text-xl container px-4 md:text-3xl text-black lg:max-w-4xl mx-auto text-start mt-14 mb-6"
         variants={itemVariants}
       >
         We collaborate with over 500 passionate sales personnel and a network of

@@ -4,20 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Cards = () => {
-  const cardsData = [
-    {
-      id: 1,
-      title: "Ethical Division",
-    },
-    {
-      id: 2,
-      title: "Critical Care Division",
-    },
-    {
-      id: 3,
-      title: "Emiror Division",
-    },
-  ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -89,30 +76,6 @@ const Cards = () => {
          
         </motion.p>
 
-          {/* 3 Black Cards */}
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-          {cardsData.map((card, index) => (
-            <motion.div
-              key={card.id}
-              custom={index}
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.03,
-                y: -5,
-                transition: { duration: 0.3 },
-              }}
-              className="bg-black text-white rounded-2xl px-2 md:px-8 py-4 md:py-4 transition-all duration-300 shadow-lg hover:shadow-2xl"
-            >
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold "
-                whileHover={{ scale: 1.05, x: 10 }}
-                transition={{ duration: 0.2 }}
-              >
-                {card.title}
-              </motion.h2>
-            </motion.div>
-          ))}
-        </div>
         
       </motion.div>
     </section>

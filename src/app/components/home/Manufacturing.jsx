@@ -30,7 +30,7 @@ const Network = () => {
         viewport={{ once: true, amount: 0.9 }}
       >
         <motion.h2
-          className="w-3/5 md:w-[60%] lg:w-[50%] text-white text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
+          className="didot w-3/5 md:w-[60%] lg:w-[50%] text-white text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{
             opacity: 1,
@@ -59,7 +59,7 @@ const Network = () => {
 
           {/* Subheading */}
           <motion.h2
-        className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mt-8 md:mt-12 leading-tight"
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mt-8 md:mt-12 leading-tight"
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}
@@ -71,7 +71,7 @@ const Network = () => {
 
       {/* Subheading */}
       <motion.h2
-        className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mt-8 md:mt-12 leading-tight"
+        className="text-sm sm:text-lg md:text-2xl lg:text-4xl font-bold mt-8 md:mt-12 leading-tight"
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}

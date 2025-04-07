@@ -1,13 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-outfit",
-});
+import { Plus_Jakarta_Sans } from "next/font/google";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -25,9 +19,9 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       style={{ scrollBehavior: "smooth" }}
-      className={`${outfit.variable} ${plusJakarta.variable}`}
+      className={plusJakarta.variable}
     >
-      <body className={outfit.className}>
+      <body className="didot">
         <Header />
         {children}
         <Footer />
