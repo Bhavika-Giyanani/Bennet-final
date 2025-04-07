@@ -60,12 +60,11 @@ const ImgHero = () => {
 
   return (
 <motion.section
-  className=" relative container flex items-center mt-[96px] "
+  className="outfit relative container flex items-center mt-[96px] "
   initial="hidden"
   animate="visible"
   exit="hidden"
   viewport={{ once: true }}
-  style={{ fontFamily: "Roboto, sans-serif" }}
 >
       <div className="w-full max-w-[1440px] mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 ">
@@ -180,7 +179,7 @@ const ImgHero = () => {
                   WebkitMaskSize: "100% 150%",
                   maskPosition: "center",
                   WebkitMaskPosition: "center",
-                  backgroundImage: "url(/heroOption2.jpeg)",
+                  backgroundImage: "url(/heroOption3.jpeg)",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   maskRepeat: "no-repeat",

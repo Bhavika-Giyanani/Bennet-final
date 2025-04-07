@@ -94,7 +94,7 @@ const Products = () => {
           <div className="relative mx-4 md:mx-0">
             {/* Decorative Shapes - Responsive sizes */}
             <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 md:w-40 h-24 md:h-40 rounded-full bg-[#AECA1D]/10 -z-10" />
-            <div className="absolute -bottom-6 md:bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 2xl:bottom-32 2xl:right-16 rounded-full bg-[#2C3D5A]/10 -z-10" />
+            <div className="absolute -bottom-6 md:-bottom-10 xl:bottom-10 -right-6 md:-right-10 w-20 md:w-32 h-20 md:h-32 2xl:bottom-32 2xl:right-16 rounded-full bg-[#2C3D5A]/10 -z-10" />
             {/* Image container */}
             <div className="relative w-full aspect-square">
               <div className="absolute inset-0 rounded-2xl md:rounded-[2rem] overflow-hidden">

@@ -60,7 +60,7 @@ const Cards = () => {
         </motion.h2>
 
         <motion.p
-          className="text-xl md:text-2xl max-w-4xl mx-auto text-start"
+          className="text-xl md:text-2xl max-w-7xl mx-auto text-start"
           variants={itemVariants}
         >
           We are committed to serving the healthcare needs of our nation. As a Pharmaceutical company, we pledge to deliver high-quality,

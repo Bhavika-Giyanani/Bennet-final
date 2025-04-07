@@ -120,7 +120,7 @@ const Stats = () => {
 
       {/* Text */}
       <motion.p
-        className="text-xl container px-4 md:text-3xl text-black lg:max-w-4xl mx-auto text-start mt-14 mb-6"
+        className="text-xl container md:px-8 2xl:px-0 md:text-3xl text-black lg:max-w-7xl mx-auto text-start mt-14 mb-6"
         variants={itemVariants}
       >
         We collaborate with over 500 passionate sales personnel and a network of
@@ -217,7 +217,7 @@ const Stats = () => {
 
       {/* Text 2 */}
       <motion.p
-        className="text-4xl px-4 font-semibold text-black mx-auto container lg:max-w-4xl  mt-16 mb-6"
+        className="text-4xl px-4 font-semibold text-black mx-auto container lg:max-w-6xl  mt-16 mb-6"
         variants={itemVariants}
       >
         Join us on our mission to empower individuals and communities through
