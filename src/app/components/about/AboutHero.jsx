@@ -44,17 +44,17 @@ const AboutHero = () => {
 
   return (
     <motion.section
-      className=" didot flex overflow-visible scale-95  mt-20  lg:mt-14 mb-10  max-w-[1460] mx-auto"
+      className=" didot flex overflow-visible scale-95  mt-20  lg:mt-14 mb-10 mx-auto"
       initial="hidden"
       animate="visible"
       exit="hidden"
       viewport={{ once: true }}
     >
-      <div className="w-full h-full px-2">
+      <div className="w-full h-full px-2 md:px-0 ">
         <div className="flex flex-col md:flex-row">
           {/* Left Side */}
           <motion.div
-            className="w-full ml-2 md:ml-0 lg:mt-12 z-30 space-y-4"
+            className="w-full ml-4 md:ml-0 lg:mt-12 z-30 space-y-4"
             variants={leftContentVariants}
           >
             <motion.h1
@@ -138,13 +138,13 @@ const AboutHero = () => {
 
           {/* Right Side */}
           <motion.div
-            className="w-full max-h-[36rem] z-10 scale-90 xl:ml-5"
+            className="w-full max-h-[36rem] z-10 scale-90 xl:ml-10"
             variants={rightImageVariants}
           >
             {/* Image */}
 
             <div
-              className="h-[20rem] w-[20rem] md:h-[25rem] lg:h-[30rem] lg:w-[30rem] xl:h-[35rem] xl:w-[40rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
+              className="h-[20rem] w-[20rem] sm:w-[24rem] md:h-[28rem] md:w-[21rem] lg:h-[30rem] lg:w-[30rem] xl:w-[44rem] xl:h-[35rem] 2xl:w-[48rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
               style={{
                 maskImage: "url('/aboutmold.png')",
                 WebkitMaskImage: "url('/aboutmold.png')",
