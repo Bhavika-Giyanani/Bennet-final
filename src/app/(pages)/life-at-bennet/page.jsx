@@ -10,7 +10,7 @@ export default async function LifeAtBennet() {
 
   return (
     <div className="min-h-screen flex flex-col mx-auto">
-      <div className="lg:px-4">
+      <div className="lg:px-4 didot">
         <HeroSection
           imageLink={data.herosection.image}
           moldLink="/lifemold.png"

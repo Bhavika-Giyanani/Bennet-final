@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       style={{ scrollBehavior: "smooth" }}
       className={plusJakarta.variable}
     >
-      <body className="didot">
+      <body className="outfit">
         <Header />
         {children}
         <Footer />

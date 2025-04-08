@@ -60,12 +60,11 @@ const ImgHero = () => {
 
   return (
 <motion.section
-  className="   relative container flex items-center mt-[96px] "
+  className=" didot  relative container flex items-center mt-[96px] "
   initial="hidden"
   animate="visible"
   exit="hidden"
   viewport={{ once: true }}
-style={{ fontFamily: "DidotProBold, serif"}}
 >
 
       <div className="w-full max-w-[1440px] mx-auto px-4">

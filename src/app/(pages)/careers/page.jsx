@@ -45,7 +45,7 @@ export default function CareersPage() {
     <div className="min-h-screen flex flex-col max-w-[1440px] mx-auto px-0">
       <main className="flex-grow">
         {/* Home */}
-        <div className="lg:px-2">
+        <div className="lg:px-2 didot ">
           <HeroSection
             imageLink={heroImage}
             moldLink="/careermold.png"

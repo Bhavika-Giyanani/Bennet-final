@@ -46,7 +46,7 @@ export default function Manufacturing() {
   return (
     <main className="min-h-screen ">
       {/* HeroSection*/}
-      <div className="px-4">
+      <div className="px-4 didot">
         <HeroSection
           imageLink={heroImage}
           moldLink="/manufacturingmold.png"

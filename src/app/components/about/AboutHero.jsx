@@ -44,7 +44,7 @@ const AboutHero = () => {
 
   return (
     <motion.section
-      className="flex overflow-visible scale-95  mt-20  lg:mt-14 mb-10  max-w-[1460] mx-auto"
+      className=" didot flex overflow-visible scale-95  mt-20  lg:mt-14 mb-10  max-w-[1460] mx-auto"
       initial="hidden"
       animate="visible"
       exit="hidden"
@@ -66,7 +66,7 @@ const AboutHero = () => {
                 <div>
                   <img
                     src="./SmolBox.svg"
-                    className="z-40 ml-0 md:ml-2 mt-[1rem] md:mt-3 md:my-0 lg:ml-2 lg:mt-0 "
+                    className="z-40 ml-0 md:ml-2  md:my-0 lg:ml-2 lg:mt-4 "
                     alt="Smol Box"
                   />
                 </div>
@@ -82,15 +82,17 @@ const AboutHero = () => {
 
                 <div className="relative z-30">
                   <div>
+                    
                     <h1 className="md:hidden">
                       Building Healthier{" "}
                       <span className="text-[#AECA1D]">Communities</span>
                     </h1>
+
                   </div>
                   <div className="hidden md:flex md:flex-col">
                     <div className="leading-tight md:relative">
                       Building
-                      <div className="md:absolute md:-mt-[5.5rem] flex md:ml-[17.5rem] lg:-mt-[7.5rem] lg:ml-[23rem] ">
+                      <div className="md:absolute md:-mt-[5.5rem] flex md:ml-[18.5rem] lg:-mt-[7.5rem] lg:ml-[24.6rem] ">
                         Heal{" "}
                         <span className="text-black md:text-[#AECA1D] ">
                           thier

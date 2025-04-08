@@ -49,7 +49,7 @@ const ProductHero2 = () => {
       exit="hidden"
       viewport={{ once: true }}
     >
-      <div className="grid md:grid-cols-2 gap-8  items-center">
+      <div className="didot grid md:grid-cols-2 gap-8  items-center">
         {/* Left Side */}
         <motion.div className="space-y-6 " variants={leftContentVariants}>
           <motion.h1
