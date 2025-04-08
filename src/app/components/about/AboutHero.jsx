@@ -73,10 +73,10 @@ const AboutHero = () => {
 
                 <div className="flex flex-col sm:flex-row md:flex-col">
                   <div className="">
-                    Your <span className="text-[#AECA1D]">Health</span>,
+                    your <span className="text-[#AECA1D]">health</span>,
                   </div>
                   <div className="leading-tight sm:-mt-1.5 md:m-0">
-                    Our Priority!
+                    our priority!
                   </div>
                 </div>
 
@@ -84,16 +84,16 @@ const AboutHero = () => {
                   <div>
                     
                     <h1 className="md:hidden">
-                      Building Healthier{" "}
-                      <span className="text-[#AECA1D]">Communities</span>
+                      building healthier{" "}
+                      <span className="text-[#AECA1D]">communities</span>
                     </h1>
 
                   </div>
                   <div className="hidden md:flex md:flex-col">
                     <div className="leading-tight md:relative">
-                      Building
+                      building
                       <div className="md:absolute md:-mt-[5.5rem] flex md:ml-[18.5rem] lg:-mt-[7.5rem] lg:ml-[24.6rem] ">
-                        Heal{" "}
+                        heal{" "}
                         <span className="text-black md:text-[#AECA1D] ">
                           thier
                         </span>
@@ -101,7 +101,7 @@ const AboutHero = () => {
                     </div>
 
                     <div className="text-[#AECA1D] leading-tight -ml-[1rem] md:ml-0 md:-mt-4">
-                      Communities
+                      communities
                     </div>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ const AboutHero = () => {
                   transition: { duration: 0.3, ease: "easeInOut" },
                 }}
               >
-                Transforming Lives Since 3 decades.
+                transforming lives since 3 decades.
               </motion.p>
             </div>
 
@@ -127,7 +127,7 @@ const AboutHero = () => {
                   href="#commitment"
                   className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
                 >
-                  Know More{" "}
+                know more{" "}
                   <span className="bg-[#AECA1DE5] rounded-full px-4 py-3">
                     ↓
                   </span>

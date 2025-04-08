@@ -92,14 +92,14 @@ const ImgHero = () => {
                   variants={textHoverVariants}
                   className="inline-block cursor-default"
                 >
-                  A Legacy of
+                  a legacy of
                 </motion.span>
                 <motion.span
                   whileHover="hover"
                   variants={accentTextHoverVariants}
                   className="text-[#AECA1D] inline-block cursor-default"
                 >
-                  Healthcare.
+                  healthcare.
                 </motion.span>
               </div>
 
@@ -109,7 +109,7 @@ const ImgHero = () => {
                   variants={textHoverVariants}
                   className="inline-block cursor-default"
                 >
-                  Together,
+                  together,
                 </motion.span>
                 <div className="inline-flex items-baseline gap-x-2">
                   <motion.span
@@ -117,14 +117,14 @@ const ImgHero = () => {
                     variants={textHoverVariants}
                     className="inline-block cursor-default"
                   >
-                    We
+                    we
                   </motion.span>
                   <motion.span
                     whileHover="hover"
                     variants={accentTextHoverVariants}
                     className="text-[#AECA1D] inline-block cursor-default"
                   >
-                    Heal
+                    heal
                   </motion.span>
                   <span className="text-[#AECA1D]">.</span>
                 </div>
@@ -139,7 +139,7 @@ const ImgHero = () => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              Dedicated to wellness since 3 decades
+              dedicated to wellness since 3 decades
               </motion.p>
 
             <motion.div variants={leftItemVariants}>
@@ -148,7 +148,7 @@ const ImgHero = () => {
                   href="#hero"
                   className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
                 >
-                  Know More{" "}
+                  know more{" "}
                   <span className="bg-[#AECA1DE5] rounded-full px-4 py-3">
                     ↓
                   </span>

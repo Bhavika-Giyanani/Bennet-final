@@ -14,8 +14,8 @@ export default async function LifeAtBennet() {
         <HeroSection
           imageLink={data.herosection.image}
           moldLink="/lifemold.png"
-          title='Empowering <span className="text-[#9DC41A]">People</span>,<br />Celebrating <span className="text-[#9DC41A]">Growth</span>'
-          description="Together We Thrive, Together We Succeed"
+          title='empowering <span className="text-[#9DC41A]">people</span>,<br />celebrating <span className="text-[#9DC41A]">growth</span>'
+          description="together we thrive, together we succeed"
           knowMoreLink="#life"
         />
       </div>

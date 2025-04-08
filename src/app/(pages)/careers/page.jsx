@@ -49,16 +49,16 @@ export default function CareersPage() {
           <HeroSection
             imageLink={heroImage}
             moldLink="/careermold.png"
-            title='<span>Empowering</span>
+            title='<span>empowering</span>
                   <br />
                   <div>
-                   People,
-                      <p className="flex md:absolute md:z-40 md:-mt-[3.8rem] md:ml-[13rem] lg:-mt-[4.7rem]  lg:ml-[15rem]">Shaping </p>
+                   people,<p className="flex md:absolute md:z-40 md:-mt-[3.7rem] md:ml-[13rem] lg:-mt-[4.6rem]  lg:ml-[15rem]">shaping </p>
                   </div>
-                  <span className="text-[#9DC41A] mt-8 ">Healthcare&apos;s</span>
+                  <span className="mt-1"></span>
+                  <span className="text-[#9DC41A] ">healthcare&apos;s</span>
                   <br />
-                  <span>Future</span>'
-            description="Empowering Growth, Celebrating Success"
+                  <span>future</span>'
+            description="empowering growth, celebrating success"
             knowMoreLink="#careers"
           />
         </div>

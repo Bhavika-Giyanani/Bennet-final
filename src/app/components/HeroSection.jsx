@@ -86,7 +86,7 @@ export default function HeroSection({
                       href={knowMoreLink} 
                       className="bg-black pl-4 py-3 md:mb-[20rem] md:ml-4 lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
                     >
-                      Know More{" "}
+                      know more{" "}
                       <span className="bg-[#AECA1DE5] rounded-full px-4 py-3">
                         ↓
                       </span>
