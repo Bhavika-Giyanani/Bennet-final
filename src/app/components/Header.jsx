@@ -64,10 +64,10 @@ useEffect(() => {
     { name: "Our Capabilities", 
       href: "",
       dropdown: [
-        { name: "Innovation", href: "/ourcapabilities#Innovation" },
+        { name: "Innovation", href: "/Innovation" },
         { name: "Manufacturing", href: "/manufacturing" },
         { name: "Products", href: "/products" },
-        { name: "Network", href: "/ourcapabilities#Network" },
+        { name: "Network", href: "/Network" },
       ],
     },
 

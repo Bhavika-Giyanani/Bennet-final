@@ -82,7 +82,7 @@ const Stats = () => {
       
            {/* Header with line */}
            <motion.div
-          className="flex justify-start  md:justify-center md:gap-0 lg:gap-0 items-center  md:px-6  max-w-[1440px] mx-auto px-0  overflow-hidden"
+          className="flex justify-start mt-[7rem]  md:justify-center md:gap-0 lg:gap-0 items-center  md:px-6  max-w-[1440px] mx-auto px-0  overflow-hidden"
           initial={{ opacity: 0, x: -7 }}
           whileInView={{
             opacity: 1,

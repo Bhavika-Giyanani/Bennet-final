@@ -8,8 +8,8 @@ const ourcapabilities = async () => {
 
   return (
     <>
-      <div id="Innovation"> <Innovation />  </div>
-      <div id="Network">  <Network /> </div>
+      <div id="/Innovation"> <Innovation />  </div>
+      <div id="/Network">  <Network /> </div>
 
     </>
   );
