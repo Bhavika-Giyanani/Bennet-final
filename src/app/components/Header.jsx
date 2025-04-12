@@ -105,15 +105,15 @@ useEffect(() => {
 
   return (
     <header
-      className={`2xl:container fixed top-0 left-0 right-0 w-full z-50 font-outfit transition-all duration-300 ${
+      className={` fixed top-0 left-0 right-0 w-full z-50 font-outfit transition-all duration-300 ${
         hasScrolled ? "bg-white shadow-md" : "bg-white"
       }`}
     >
-      <nav className="px-4 py-4">
+      <nav className="px-4 py-3 2xl:container ">
         <motion.div
           initial="hidden"
           animate="visible"
-          className="flex items-center justify-between"
+          className="flex items-center justify-between "
         >
           {/* Logo Section */}
           <motion.div

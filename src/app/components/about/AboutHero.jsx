@@ -122,7 +122,7 @@ const AboutHero = () => {
             </div>
 
             <motion.div variants={leftItemVariants}>
-              <div className="-ml-2 md:-ml-2 lg:-ml-0 mt-4">
+              <div className="-ml-2 md:-ml-2 lg:-ml-0 mt-6">
                 <Link
                   href="#commitment"
                   className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
