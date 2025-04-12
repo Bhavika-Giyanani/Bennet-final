@@ -66,7 +66,7 @@ const AboutHero = () => {
                 <div>
                   <img
                     src="./SmolBox.svg"
-                    className="z-40 ml-0 md:ml-2  md:my-0 lg:ml-2 lg:mt-4 "
+                    className="z-40  md:my-0  lg:mt-4 "
                     alt="Smol Box"
                   />
                 </div>

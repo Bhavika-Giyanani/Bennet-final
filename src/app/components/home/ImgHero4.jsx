@@ -67,7 +67,7 @@ const ImgHero = () => {
   viewport={{ once: true }}
 >
 
-      <div className="w-full max-w-[1440px] mx-auto px-4">
+      <div className="w-full max-w-[1440px] mx-auto px-3 md:px-0 xl:px-3 2xl:px-0">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 ">
           <motion.div
             className="w-full md:w-1/2 space-y-6"
@@ -158,7 +158,7 @@ const ImgHero = () => {
           </motion.div>
 
           <motion.div
-            className="w-full md:w-1/2 h-[400px] md:h-[500px]"
+            className="w-full md:w-1/2 h-[400px] md:h-[480px] xl:h-[500px] "
             variants={rightImageVariants}
           >
             <div className="relative h-full rounded-[2rem] ">
@@ -170,7 +170,7 @@ const ImgHero = () => {
               /> */}
 
               <div
-                className="w-[280px] h-[350px] md:w-[360px] md:h-full xl:w-[36rem] 2xl:w-full max-w-[41rem] mx-auto md:mx-0 rounded-[2rem]"
+                className="w-[280px]  sm:w-[400px] h-[350px] md:w-[360px] lg:w-[420px] md:h-full xl:w-[36rem] 2xl:w-full max-w-[40rem] mx-auto md:mx-0 rounded-[2rem]"
                 style={{
                   maskImage: "url('/homemold.png')",
                   WebkitMaskImage: "url('/homemold.png')",

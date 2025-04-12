@@ -109,7 +109,7 @@ useEffect(() => {
         hasScrolled ? "bg-white shadow-md" : "bg-white"
       }`}
     >
-      <nav className="px-4 py-3 2xl:container ">
+      <nav className="px-4 pt-4 pb-2  container ">
         <motion.div
           initial="hidden"
           animate="visible"
