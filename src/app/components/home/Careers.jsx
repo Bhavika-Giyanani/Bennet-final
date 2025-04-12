@@ -88,7 +88,7 @@ const Events = () => {
               </motion.div>
 
               <motion.div className="md:w-1/2 space-y-8" variants={fadeInUp}>
-                <p className="text-lg md:text-xl text-gray-700">
+                <p className="text-lg md:text-xl text-black font-semibold">
                   Explore the latest achievements, milestones, and breakthroughs
                   at Bennet Pharmaceuticals.
                 </p>

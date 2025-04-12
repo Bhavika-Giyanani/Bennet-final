@@ -51,7 +51,7 @@ const Innovation = () => {
         viewport={{ once: true, amount: 0.9 }}
       >
         <motion.h2
-          className="w-3/5 md:w-[60%] lg:w-[50%] text-white text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-stroke-black"
+          className="w-3/5 md:w-[60%] lg:w-[50%]  text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-stroke-black"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{
             opacity: 1,
@@ -78,13 +78,13 @@ const Innovation = () => {
 
       </motion.div>
 
-        <div className="bg-black text-white rounded-xl md:rounded-2xl p-6  md:px-12 grid md:grid-cols-2 gap-6 md:gap-8 items-center hover:scale-[1.01] transition-transform duration-300">
+        <div className="bg-[#D7E48E] text-black rounded-xl md:rounded-2xl p-6  md:px-12 grid md:grid-cols-2 gap-6 md:gap-8 items-center hover:scale-[1.01] transition-transform duration-300">
           <h3 className="text-3xl font-bold">Innovation</h3>
-          <p className="text-base md:text-xl text-gray-400">
-            <span className="text-white text-xl font-semibold">PATENT </span>{" "}
+          <p className="text-base md:text-xl ">
+            <span className=" text-xl font-bold">PATENT </span>{" "}
             granted for enhancing the bioavailability of highly unstable
             molecule{" "}
-            <span className="text-white text-xl font-semibold">
+            <span className=" text-xl font-bold">
               {" "}
               LACTOFERRIN{" "}
             </span>{" "}
@@ -93,12 +93,12 @@ const Innovation = () => {
             <span className="h-1 w-1"></span>
             <br />
             Innovation research done in collaboration with{" "}
-            <span className="text-white text-xl font-semibold">
+            <span className=" text-xl font-bold">
               {" "}
               NIPER-A{" "}
             </span>{" "}
             for
-            <span className="text-white text-xl font-semibold">
+            <span className=" text-xl font-bold">
               {" "}
               SILVER NANOMIX PARTICLES{" "}
             </span>{" "}
