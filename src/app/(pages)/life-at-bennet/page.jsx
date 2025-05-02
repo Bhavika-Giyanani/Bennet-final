@@ -10,11 +10,11 @@ export default async function LifeAtBennet() {
 
   return (
     <div className="min-h-screen flex flex-col mx-auto">
-      <div className="lg:px-4 didot">
+      <div className="lg:px-4 ">
         <HeroSection
           imageLink={data.herosection.image}
           moldLink="/lifemold.png"
-          title='empowering <span className="text-[#9DC41A]">people</span>,<br />celebrating <span className="text-[#9DC41A]">growth</span>'
+          title='empowerin<span className="outfit">g</span> <span className="text-[#9DC41A]">peop<span className="outfit">l</span>e</span><br />ce<span className="outfit">l</span>ebr<span className="outfit">a</span>ting <span className="text-[#9DC41A]"><span className="outfit">g</span>rowth</span>'
           description="together we thrive, together we succeed"
           knowMoreLink="#life"
         />

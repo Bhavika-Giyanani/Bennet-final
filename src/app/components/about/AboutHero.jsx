@@ -44,36 +44,36 @@ const AboutHero = () => {
 
   return (
     <motion.section
-      className=" didot flex overflow-visible scale-95  mt-20  lg:mt-14 mb-10 mx-auto"
+      className="flex overflow-visible scale-95 2xl:scale-100 mt-20 lg:mt-14 mb-10 mx-auto"
       initial="hidden"
       animate="visible"
       exit="hidden"
       viewport={{ once: true }}
     >
-      <div className="w-full h-full px-2 md:px-0 ">
+      <div className="w-full h-full px-2 md:px-0">
         <div className="flex flex-col md:flex-row">
           {/* Left Side */}
           <motion.div
-            className="w-full ml-4 md:ml-0 lg:mt-12 z-30 space-y-4"
+            className="w-full ml-4 md:ml-0 md:mt-2 lg:mt-[4.5rem] z-30 space-y-4"
             variants={leftContentVariants}
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] lg:scale-90 lg:-ml-6"
+              className="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-bold leading-[1.1] lg:scale-90 lg:-ml-6"
               variants={leftItemVariants}
             >
-              <div className="md:ml-2 md:mt-2 lg:-mt-[3.5rem]  scale-105 overflow-visible">
+              <div className="md:ml-2 mt-4 md:mt-[1rem] lg:-mt-12 lg:scale-105 overflow-visible">
                 {/* Smol Box */}
                 <div>
                   <img
                     src="./SmolBox.svg"
-                    className="z-40  md:my-0  lg:mt-4 "
+                    className="z-40 md:my-0 lg:mt-4"
                     alt="Smol Box"
                   />
                 </div>
 
                 <div className="flex flex-col sm:flex-row md:flex-col">
                   <div className="">
-                    your <span className="text-[#AECA1D]">health</span>,
+                    your <span className="text-[#AECA1D]">he<span className="outfit">a</span>lth</span>,
                   </div>
                   <div className="leading-tight sm:-mt-1.5 md:m-0">
                     our priority!
@@ -82,19 +82,17 @@ const AboutHero = () => {
 
                 <div className="relative z-30">
                   <div>
-                    
                     <h1 className="md:hidden">
-                      building healthier{" "}
+                      building he<span className="outfit">a</span><span className="outfit">l</span>thier{" "}
                       <span className="text-[#AECA1D]">communities</span>
                     </h1>
-
                   </div>
                   <div className="hidden md:flex md:flex-col">
                     <div className="leading-tight md:relative">
                       building
-                      <div className="md:absolute md:-mt-[5.5rem] flex md:ml-[18.5rem] lg:-mt-[7.5rem] lg:ml-[24.6rem] ">
-                        heal{" "}
-                        <span className="text-black md:text-[#AECA1D] ">
+                      <div className="md:absolute md:-mt-[3.7rem] flex md:ml-[12rem] lg:-mt-[5.5rem] lg:ml-[18rem]">
+                        he<span className="outfit">a</span><span className="outfit">l</span>{" "}
+                        <span className="text-black md:text-[#AECA1D]">
                           thier
                         </span>
                       </div>
@@ -108,9 +106,9 @@ const AboutHero = () => {
               </div>
             </motion.h1>
 
-            <div className=" -ml-2 lg:ml-2 md:-ml-1 lg:-mt-[1.3rem]  ">
+            <div className="md:ml-2 md:-ml-1 lg:-mt-[1.3rem]">
               <motion.p
-                className="text-xl md:text-2xl text-gray-700 cursor-default font-bold"
+                className="text-xl md:text-3xl text-gray-700 cursor-default font-bold"
                 variants={leftItemVariants}
                 whileHover={{
                   scale: 1.02,
@@ -122,12 +120,12 @@ const AboutHero = () => {
             </div>
 
             <motion.div variants={leftItemVariants}>
-              <div className="-ml-2 md:-ml-2 lg:-ml-0 mt-6">
+              <div className="lg:-ml-2 lg:-ml-0 mt-6">
                 <Link
                   href="#commitment"
-                  className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
+                  className="bg-black pl-4 py-3 md:mb-[20rem] lg:ml-2 text-white text-sm md:text-base rounded-full font-bold"
                 >
-                know more{" "}
+                  know more{" "}
                   <span className="bg-[#AECA1DE5] rounded-full px-4 py-3">
                     ↓
                   </span>
@@ -136,39 +134,31 @@ const AboutHero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Side */}
+          {/* Right Side - Using original dimensions */}
           <motion.div
-            className="w-full max-h-[36rem] z-10 scale-90 xl:ml-10"
+            className="w-full z-10 scale-90 xl:ml-10 mt-6 md:mt-0"
             variants={rightImageVariants}
           >
-            {/* Image */}
-
+            {/* Image with original dimensions preserved */}
             <div
-              className="h-[20rem] w-[20rem] sm:w-[24rem] md:h-[28rem] md:w-[21rem] lg:h-[30rem] lg:w-[30rem] xl:w-[44rem] xl:h-[35rem] 2xl:w-[48rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
+              className="md:max-h-[27rem] lg:max-h-[33rem] w-auto md:h-[30rem] lg:h-[26rem] xl:h-[35rem] 2xl:w-[48rem] mt-6 md:mt-0 rounded-[2rem] z-10 h-[350px] sm:h-[350px]"
               style={{
                 maskImage: "url('/aboutmold.png')",
                 WebkitMaskImage: "url('/aboutmold.png')",
                 maskSize: "contain",
                 WebkitMaskSize: "contain",
-                maskSize: "100% 150%",
-                WebkitMaskSize: "115% 100%",
+                maskRepeat: "no-repeat",
+                WebkitMaskRepeat: "no-repeat",
                 maskPosition: "center",
                 WebkitMaskPosition: "center",
                 backgroundImage: `url(${heroImage})`,
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                maskRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundColor: "black",
+                display: "block",
               }}
             >
-              {/* <img
-                src="/AboutUs.png"
-                alt="Medical consultation"
-                className="w-full h-full max-h-[36rem] md:h-[30rem] lg:h-full object-cover rounded-[2rem]"
-              /> */}
-
-              <div className=" inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem]" />
+              <div className="inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem]" />
             </div>
           </motion.div>
         </div>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import ImgHero4 from "./components/home/ImgHero4";
+import ImgHero5 from "./components/home/ImgHero5";
 import ImageMarquee from "./components/home/ImageMarquee";
 import Stats from "./components/home/Stats";
 import Cards from "./components/home/Cards";
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <>
       <div className="overflow-x-hidden">
+      <ImgHero5 />
         <ImgHero4 />
         <HomeHero />
         <Cards />

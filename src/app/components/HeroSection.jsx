@@ -53,7 +53,7 @@ export default function HeroSection({
         exit="hidden"
         viewport={{ once: true }}
       >
-        <div className="w-full max-w-[1440px] mx-auto px-4">
+        <div className="w-full max-w-[1440px] mx-auto mt-6 md:mt-0 px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Left-side content */}
             <motion.div
@@ -61,7 +61,7 @@ export default function HeroSection({
               variants={leftContentVariants}
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1]"
+                className="text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold leading-[1.1]"
                 variants={leftItemVariants}
               >
                 {parse(title)}
@@ -98,7 +98,7 @@ export default function HeroSection({
 
             {/* Right-side image */}
             <motion.div
-              className="w-full z-10 md:w-1/2 h-[300px] md:h-[500px]"
+              className="w-full z-10 md:w-1/2 h-[300px] md:h-[400px]"
               variants={rightImageVariants}
             >
               <div className="relative h-full rounded-[2rem] overflow-hidden flex items-center">

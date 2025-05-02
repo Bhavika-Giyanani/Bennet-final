@@ -60,7 +60,7 @@ const ImgHero = () => {
 
   return (
 <motion.section
-  className="didot relative container flex items-center mt-[96px] "
+  className="outfit relative container flex items-center mt-[96px] "
   initial="hidden"
   animate="visible"
   exit="hidden"
@@ -92,14 +92,14 @@ const ImgHero = () => {
                   variants={textHoverVariants}
                   className="inline-block cursor-default"
                 >
-                  <span className="didot">a</span> le<span className="didot">g</span><span className="didot">a</span>cy of
+                  <span className="outfit">a</span> le<span className="outfit">g</span><span className="outfit">a</span>cy of
                 </motion.span>
                 <motion.span
                   whileHover="hover"
                   variants={accentTextHoverVariants}
                   className="text-[#AECA1D] inline-block cursor-default"
                 >
-                  he<span className="didot">a</span>lthc<span className="didot">a</span>re.
+                  he<span className="outfit">a</span>lthc<span className="outfit">a</span>re.
                 </motion.span>
               </div>
 
@@ -124,7 +124,7 @@ const ImgHero = () => {
                     variants={accentTextHoverVariants}
                     className="text-[#AECA1D] inline-block cursor-default"
                   >
-                    he<span className="didot">a</span>l
+                    he<span className="outfit">a</span>l
                   </motion.span>
                   <span className="text-[#AECA1D]">.</span>
                 </div>

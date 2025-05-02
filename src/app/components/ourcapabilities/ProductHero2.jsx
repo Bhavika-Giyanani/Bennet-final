@@ -49,19 +49,19 @@ const ProductHero2 = () => {
       exit="hidden"
       viewport={{ once: true }}
     >
-      <div className="didot grid md:grid-cols-2 gap-8  items-center">
+      <div className="grid md:grid-cols-2 gap-8  items-center">
         {/* Left Side */}
         <motion.div className="space-y-6 " variants={leftContentVariants}>
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight"
             variants={leftItemVariants}
           >
-            <div className="text-[#AECA1D] mt-10 sm:mt-0 md:-mt-8 ">
-              empowering
+            <div className="text-[#AECA1D] mt-16 sm:mt-0 md:-mt-8 ">
+              empowerin<span className="outfit">g</span>
             </div>
             <div className="flex flex-wrap">
-              <span className="mr-2">lives and</span>
-              <span>affordability</span>
+              <span className="mr-2">lives <span className="outfit">a</span>nd</span>
+              <span><span className="outfit">a</span>fford<span className="outfit">a</span>bi<span className="outfit">l</span>ity</span>
             </div>
           </motion.h1>
 
@@ -88,7 +88,7 @@ const ProductHero2 = () => {
           variants={rightImageVariants}
         > 
           <div
-            className="h-[20rem] md:h-[24rem] lg:-[32rem] xl:h-[36rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
+            className="h-[20rem] md:h-[24rem] lg:[22rem] xl:h-[22rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
             style={{
               maskImage: "url('/secondmold.png')",
               WebkitMaskImage: "url('/secondmold.png')",

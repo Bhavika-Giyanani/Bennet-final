@@ -46,11 +46,11 @@ export default function Manufacturing() {
   return (
     <main className="min-h-screen ">
       {/* HeroSection*/}
-      <div className="px-4 didot">
+      <div className="px-4 mt-36 md:mt-0 ">
         <HeroSection
           imageLink={heroImage}
           moldLink="/manufacturingmold.png"
-          title='<span className="text-[#9DC41A]">empowering</span> trust, together we deliver  <span className="text-[#9DC41A]">quality</span>'
+          title='<span className="text-[#9DC41A]">empowering</span> trust, together we de<span className="outfit">l</span>iver  <span className="text-[#9DC41A]">qu<span className="outfit">a</span><span className="outfit">l</span>ity</span>'
           // description="Where excellence meets accessibility"
           knowMoreLink="#manufacturing"
         />

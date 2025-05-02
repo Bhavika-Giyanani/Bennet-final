@@ -43,19 +43,19 @@ export default function CareersPage() {
   console.log(sliderImages);
   return (
     <div className="min-h-screen flex flex-col max-w-[1440px] mx-auto px-0">
-      <main className="flex-grow">
+      <main className="flex-grow md:mt-4 lg:mt-0 ">
         {/* Home */}
-        <div className="lg:px-2 didot ">
+        <div className="lg:px-2">
           <HeroSection
             imageLink={heroImage}
             moldLink="/careermold.png"
-            title='<span>empowering</span>
+            title='<span>empowerin<span className="outfit">g</span></span>
                   <br />
                   <div>
-                   people,<p className="flex md:absolute md:z-40 md:-mt-[3.7rem] md:ml-[13rem] lg:-mt-[4.6rem]  lg:ml-[15rem]">shaping </p>
+                   peop<span className="outfit">l</span>e<p className="flex md:absolute md:z-40 md:-mt-[3.8rem] md:ml-[12rem] lg:-mt-[3.8rem]  lg:ml-[12.5rem] 2xl:ml-[14.5rem] 2xl:-mt-[4.5rem] "> sh<span className="outfit">a</span>pin<span className="outfit">g</span> </p>
                   </div>
                   <span className="mt-1"></span>
-                  <span className="text-[#9DC41A] ">healthcare&apos;s</span>
+                  <span className="text-[#9DC41A] ">he<span className="outfit">a</span><span className="outfit">l</span>thc<span className="outfit">a</span>re&apos;s</span>
                   <br />
                   <span>future</span>'
             description="empowering growth, celebrating success"

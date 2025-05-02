@@ -71,7 +71,7 @@ useEffect(() => {
       ],
     },
 
-    { name: "Life At Bennet", href: "/life-at-bennet" },
+    { name: "Life @ Bennet", href: "/life-at-bennet" },
     { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact" },
   ];
@@ -109,7 +109,7 @@ useEffect(() => {
         hasScrolled ? "bg-white shadow-md" : "bg-white"
       }`}
     >
-      <nav className="px-4 pt-4 pb-2  container ">
+      <nav className="px-4 md:px-0 lg:pr-4 pt-4 pb-2  container ">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -121,19 +121,19 @@ useEffect(() => {
             className="flex-shrink-0"
             transition={{ duration: 0.2 }}
           >
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex -ml-2 items-center">
               <Image
                 src="/bennet-3.png"
                 alt="Bennet Pharmaceuticals Ltd."
-                width={150}
-                height={50}
-                className="h-14 w-auto"
+                width={200}
+                height={100}
+                className="h-20 w-auto"
               />
             </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-7">
             {navigation.map((item, index) => (
               <motion.div
                 key={item.name}
