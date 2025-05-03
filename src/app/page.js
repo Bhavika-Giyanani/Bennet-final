@@ -15,7 +15,7 @@ import Innovation from "./components/home/Innovation";
 const Home = () => {
   return (
     <>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden mt-24 md:mt-20 container">
       <ImgHero5 />
         <ImgHero4 />
         <HomeHero />

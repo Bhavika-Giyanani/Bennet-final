@@ -57,11 +57,11 @@ export default function HeroSection({
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Left-side content */}
             <motion.div
-              className="w-full md:w-1/2 space-y-6 z-20 "
+              className="w-full md:w-1/2 space-y-6 mt-6 z-20 "
               variants={leftContentVariants}
             >
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold leading-[1.1]"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-[5rem] font-semibold leading-[1.1]"
                 variants={leftItemVariants}
               >
                 {parse(title)}
@@ -98,12 +98,12 @@ export default function HeroSection({
 
             {/* Right-side image */}
             <motion.div
-              className="w-full z-10 md:w-1/2 h-[300px] md:h-[400px]"
+              className="w-full z-10 md:w-1/2 h-[300px] md:h-[430px] 2xl:h-[450px] "
               variants={rightImageVariants}
             >
               <div className="relative h-full rounded-[2rem] overflow-hidden flex items-center">
                 <div
-                  className="w-full h-[300px] md:w-full md:h-[400px] lg:h-[500px] xl:h-full max-h-[34rem]"
+                  className="w-full h-[300px] md:h-[400px] lg:h-[500px]  max-h-[30rem]"
                   style={{
                     maskImage: `url('${moldLink}')`,
                     WebkitMaskImage: `url('${moldLink}')`,
@@ -118,10 +118,9 @@ export default function HeroSection({
                     backgroundRepeat: "no-repeat",
                     maskRepeat: "no-repeat",
                     backgroundPosition: "center",
-                    backgroundColor: "black",
+                    backgroundColor: "white",
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem]" />
               </div>
             </motion.div>
           </div>

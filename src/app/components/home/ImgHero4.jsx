@@ -17,7 +17,7 @@ const ImgHero = () => {
   }, []);
 
   const leftContentVariants = {
-    hidden: { opacity: 0, x: -200 },
+    hidden: { opacity: 0},
     visible: {
       opacity: 1,
       x: 0,
@@ -60,21 +60,23 @@ const ImgHero = () => {
 
   return (
 <motion.section
-  className="didot relative container flex items-center mt-[96px] "
+  className="didot flex font-bold w-full mb-10 "
   initial="hidden"
   animate="visible"
   exit="hidden"
   viewport={{ once: true }}
 >
 
-      <div className="w-full max-w-[1440px] mx-auto px-3 md:px-0 xl:px-3 2xl:px-0">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 ">
+      <div className="">
+        <div className="flex flex-col md:flex-row gap-8 ">
+
+        {/* Left Side Variants */}
           <motion.div
-            className="w-full md:w-1/2 space-y-1"
+            className="w-full md:w-1/2 "
             variants={leftContentVariants}
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.1] overflow-hidden"
+              className="text-5xl sm:text-5xl -ml-8 sm:-ml-9 md:-ml-12 lg:-ml-16 xl:-ml-18 md:text-7xl lg:text-8xl font-bold leading-[1.1] overflow-hidden"
               variants={leftItemVariants}
             >
               {/* Smol Box */}
@@ -86,24 +88,24 @@ const ImgHero = () => {
                 />
               </div> */}
 
-              <div className="flex scale-[0.8]  flex-wrap -ml-7 sm:-ml-10 lg:-ml-[4rem] 2xl:-ml-[5rem] items-baseline gap-x-3">
+              <div className="scale-[0.8] -mt-2 flex-wrap">
                 <motion.span
                   whileHover="hover"
                   variants={textHoverVariants}
-                  className="inline-block cursor-default"
+                  className=" cursor-default"
                 >
-                  <span className="didot">a</span> le<span className="didot">g</span><span className="didot">a</span>cy of
+                  <span className="didot">a</span> le<span className="didot">g</span><span className="didot">a</span>cy of 
                 </motion.span>
                 <motion.span
                   whileHover="hover"
                   variants={accentTextHoverVariants}
-                  className="text-[#AECA1D] inline-block cursor-default"
+                  className="text-[#AECA1D] cursor-default ml-2 md:ml-3"
                 >
-                  he<span className="didot">a</span>lthc<span className="didot">a</span>re.
+              he<span className="didot">a</span>lthc<span className="didot">a</span>re.
                 </motion.span>
               </div>
 
-              <div className="flex flex-wrap scale-[0.8] mt-1 md:-mt-2 -ml-7 md:-ml-10 lg:-ml-[4rem] 2xl:-ml-[5rem] items-baseline gap-x-3 -mt-6">
+              <div className="flex flex-wrap scale-[0.8] -mt-4 gap-x-3 ">
                 <motion.span
                   whileHover="hover"
                   variants={textHoverVariants}
@@ -122,7 +124,7 @@ const ImgHero = () => {
                   <motion.span
                     whileHover="hover"
                     variants={accentTextHoverVariants}
-                    className="text-[#AECA1D] inline-block cursor-default"
+                    className="text-[#AECA1D] inline-block  cursor-default"
                   >
                     he<span className="didot">a</span>l
                   </motion.span>
@@ -132,7 +134,7 @@ const ImgHero = () => {
             </motion.h1>
 
             <motion.p
-              className="text-xl md:text-3xl text-gray-700 cursor-default -mt-10 font-bold"
+              className="text-xl md:text-3xl text-gray-700 cursor-default -mt-1  2xl:ml-4 font-bold"
               variants={leftItemVariants}
               whileHover={{
                 scale: 1.02,
@@ -143,7 +145,7 @@ const ImgHero = () => {
               </motion.p>
 
             <motion.div variants={leftItemVariants}>
-              <div className=" mt-4">
+              <div className=" mt-4  2xl:ml-4">
                 <Link
                   href="#hero"
                   className="bg-black pl-4 py-3 md:mb-[20rem]  lg:ml-0 text-white text-sm md:text-base rounded-full font-bold"
@@ -158,19 +160,13 @@ const ImgHero = () => {
           </motion.div>
 
           <motion.div
-            className="w-full md:w-1/2 h-[400px] md:h-[480px] xl:h-[460px] 2xl:ml-[6rem] "
+            className="w-full md:w-1/2 "
             variants={rightImageVariants}
           >
             <div className="relative h-full rounded-[2rem] ">
              
-              {/* <img
-                src="/tab.svg"
-                alt="Medical consultation"
-                className="z-40 scale-75 absolute mt-[18rem]  md:mt-[25rem] md:-ml-12 lg:mt-[23rem] lg:-ml-12 "
-              /> */}
-
-              <div
-                className="w-[280px]  sm:w-[400px] h-[350px] md:w-[360px] lg:w-[420px] md:h-full xl:w-[36rem] 2xl:w-full max-w-[40rem] mx-auto md:mx-0 rounded-[2rem]"
+                           <div
+                className="w-[280px]  sm:w-[400px] h-[350px] md:w-[360px] lg:w-[420px] md:h-full 2xl:ml-[6rem] xl:w-[36rem] max-w-[40rem] mx-auto md:mx-0 rounded-[2rem]"
                 style={{
                   maskImage: "url('/homemold.png')",
                   WebkitMaskImage: "url('/homemold.png')",
@@ -181,20 +177,14 @@ const ImgHero = () => {
                   maskPosition: "center",
                   WebkitMaskPosition: "center",
                   backgroundImage: "url(/heroOption3.jpeg)",
-                  backgroundSize: "cover",
+                  backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
                   maskRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundColor: "gray", // Fallback background
                 }}
               />
-              {/* <img
-                src="/Homepage2.png"
-                alt="Home Page Image"
-                className="w-full xl:w-[36rem] 2xl:w-full max-w-[41rem] h-full object-cover rounded-[2rem] "
-              /> */}
 
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[2rem]" />
             </div>
           </motion.div>
         </div>

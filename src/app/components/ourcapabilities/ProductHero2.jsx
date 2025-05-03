@@ -53,7 +53,7 @@ const ProductHero2 = () => {
         {/* Left Side */}
         <motion.div className="space-y-6 " variants={leftContentVariants}>
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight"
+            className="text-4xl  md:text-5xl lg:text-6xl xl:text-7xl font-medium leading-tight"
             variants={leftItemVariants}
           >
             <div className="text-[#AECA1D] mt-16 sm:mt-0 md:-mt-8 ">
@@ -88,7 +88,7 @@ const ProductHero2 = () => {
           variants={rightImageVariants}
         > 
           <div
-            className="h-[20rem] md:h-[24rem] lg:[22rem] xl:h-[22rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
+            className="h-[18rem] md:h-[16rem] lg:[22rem] xl:h-[22rem] scale-95 mt-6 md:mt-0 rounded-[2rem] z-10"
             style={{
               maskImage: "url('/secondmold.png')",
               WebkitMaskImage: "url('/secondmold.png')",
@@ -99,7 +99,7 @@ const ProductHero2 = () => {
               maskPosition: "center",
               WebkitMaskPosition: "center",
               backgroundImage: `url(${heroImage})`,
-              backgroundSize: "cover",
+              backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               maskRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -112,7 +112,7 @@ const ProductHero2 = () => {
 
       {/* Green Card */}
       <motion.div
-        className="p-4 md:p-8 flex flex-col mt-20 md:flex-row items-center justify-between bg-[#D7E48E] rounded-xl max-w-screen-xl mx-auto gap-6 md:gap-12"
+        className="p-4 md:p-8 flex flex-col mt-10 md:flex-row items-center justify-between bg-[#D7E48E] rounded-xl max-w-screen-xl mx-auto gap-6 md:gap-12"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}

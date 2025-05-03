@@ -50,7 +50,7 @@ const AboutHero = () => {
       exit="hidden"
       viewport={{ once: true }}
     >
-      <div className="w-full h-full px-2 md:px-0">
+      <div className="w-full h-full md:px-0">
         <div className="flex flex-col md:flex-row">
           {/* Left Side */}
           <motion.div
@@ -134,14 +134,14 @@ const AboutHero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Side - Using original dimensions */}
+          {/* Right Side - Fixed for proper stretching on 2xl screens */}
           <motion.div
-            className="w-full z-10 scale-90 xl:ml-10 mt-6 md:mt-0"
+            className="w-full z-10 scale-90 xl:ml-10 mt-6 md:mt-0 2xl:flex 2xl:justify-center"
             variants={rightImageVariants}
           >
-            {/* Image with original dimensions preserved */}
+            {/* Image with improved responsive behavior */}
             <div
-              className="md:max-h-[27rem] lg:max-h-[33rem] w-auto md:h-[30rem] lg:h-[26rem] xl:h-[35rem] 2xl:w-[48rem] mt-6 md:mt-0 rounded-[2rem] z-10 h-[350px] sm:h-[350px]"
+              className="md:max-h-[29rem] lg:max-h-[33rem] 2xl:ml-[8rem] xl:max-h-[33rem] 2xl:max-h-none w-auto md:h-[30rem] lg:h-[26rem] xl:h-[33rem] 2xl:w-full mt-6 md:mt-0 rounded-[2rem] z-10 h-[350px] sm:h-[350px]"
               style={{
                 maskImage: "url('/aboutmold.png')",
                 WebkitMaskImage: "url('/aboutmold.png')",
@@ -152,7 +152,7 @@ const AboutHero = () => {
                 maskPosition: "center",
                 WebkitMaskPosition: "center",
                 backgroundImage: `url(${heroImage})`,
-                backgroundSize: "cover",
+                backgroundSize: "contain",
                 backgroundPosition: "center",
                 backgroundColor: "black",
                 display: "block",

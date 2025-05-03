@@ -34,16 +34,11 @@ export default function CareersPage() {
     }
     fetchData();
   }, []);
-  // Array of images for the slider
-  // const contactImages = [
-  //   "/GroupPhoto1.jpg",
-  //   "/GroupPhoto2.jpg",
-  //   "/GroupPhoto3.jpg",
-  // ];
+
   console.log(sliderImages);
   return (
     <div className="min-h-screen flex flex-col max-w-[1440px] mx-auto px-0">
-      <main className="flex-grow md:mt-4 lg:mt-0 ">
+      <main className="flex-grow ">
         {/* Home */}
         <div className="lg:px-2">
           <HeroSection
@@ -51,10 +46,18 @@ export default function CareersPage() {
             moldLink="/careermold.png"
             title='<span>empowerin<span className="outfit">g</span></span>
                   <br />
+
                   <div>
-                   peop<span className="outfit">l</span>e<p className="flex md:absolute md:z-40 md:-mt-[3.8rem] md:ml-[12rem] lg:-mt-[3.8rem]  lg:ml-[12.5rem] 2xl:ml-[14.5rem] 2xl:-mt-[4.5rem] "> sh<span className="outfit">a</span>pin<span className="outfit">g</span> </p>
+
+                   peop<span className="outfit">l</span>e
+
+                   <p className="flex md:absolute md:z-40 md:-mt-[3.8rem] md:ml-[12rem] lg:-mt-[4.5rem]  lg:ml-[14.2rem] 2xl:ml-[16rem] 2xl:-mt-[5rem] "> 
+
+                   sh<span className="outfit">a</span>pin<span className="outfit">g</span> 
+
+                   </p>
+                 
                   </div>
-                  <span className="mt-1"></span>
                   <span className="text-[#9DC41A] ">he<span className="outfit">a</span><span className="outfit">l</span>thc<span className="outfit">a</span>re&apos;s</span>
                   <br />
                   <span>future</span>'
