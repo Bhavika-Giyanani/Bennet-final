@@ -99,7 +99,7 @@ const ProductHero2 = () => {
               maskPosition: "center",
               WebkitMaskPosition: "center",
               backgroundImage: `url(${heroImage})`,
-              backgroundSize: "contain",
+             backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               maskRepeat: "no-repeat",
               backgroundPosition: "center",

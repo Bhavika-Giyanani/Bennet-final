@@ -152,7 +152,7 @@ const AboutHero = () => {
                 maskPosition: "center",
                 WebkitMaskPosition: "center",
                 backgroundImage: `url(${heroImage})`,
-                backgroundSize: "contain",
+               backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundColor: "black",
                 display: "block",

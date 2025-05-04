@@ -110,7 +110,7 @@ const Products = () => {
                     maskPosition: "center",
                     WebkitMaskPosition: "center",
                     backgroundImage: `url("/product2.jpg")`,
-                    backgroundSize: "contain",
+                   backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     maskRepeat: "no-repeat",
                     backgroundPosition: "center",

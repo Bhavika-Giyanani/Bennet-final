@@ -177,7 +177,7 @@ const ImgHero = () => {
                   maskPosition: "center",
                   WebkitMaskPosition: "center",
                   backgroundImage: "url(/heroOption3.jpeg)",
-                  backgroundSize: "contain",
+                 backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   maskRepeat: "no-repeat",
                   backgroundPosition: "center",
