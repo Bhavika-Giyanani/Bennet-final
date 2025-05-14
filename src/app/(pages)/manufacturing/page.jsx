@@ -227,7 +227,7 @@ export default function Manufacturing() {
           {/* Title */}
           {isLargeScreen ? (
             <motion.div
-              className="flex justify-start md:gap-0 lg:gap-0 items-center my-10 mb-14 overflow-hidden"
+              className="flex justify-start md:gap-0 lg:gap-0 items-center h-20 mb-14 overflow-hidden"
               initial={{ opacity: 0, x: -70 }}
               whileInView={{
                 opacity: 1,
@@ -275,7 +275,7 @@ export default function Manufacturing() {
               viewport={{ once: true, amount: 0.9 }}
             >
               <motion.h2
-                className="w-full md:w-[20%] lg:w-[25%] 2xl:w-[45%] text-white text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
+                className="w-full md:w-[60%] lg:w-[25%] 2xl:w-[45%] text-white text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{
                   opacity: 1,

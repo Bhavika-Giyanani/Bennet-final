@@ -20,7 +20,7 @@ const Network = () => {
     <section className="container mx-auto mt-12 md:mt-20 px-4">
       {/* Header Section */}
       <motion.div
-        className="flex justify-start lg:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
+        className="flex justify-start lg:justify-between md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
         initial={{ opacity: 0, x: -70 }}
         whileInView={{
           opacity: 1,
@@ -30,7 +30,7 @@ const Network = () => {
         viewport={{ once: true, amount: 0.9 }}
       >
         <motion.h2
-          className="w-3/5 md:w-[60%] lg:w-[50%] text-white text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
+          className="w-3/5 md:w-[60%] lg:w-[20%] text-white text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-stroke-black"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{
             opacity: 1,
@@ -43,7 +43,7 @@ const Network = () => {
         </motion.h2>
 
         <motion.div
-          className="w-0 text-left md:w-[0%] lg:w-[50%] mt-2"
+          className="w-0 text-left md:w-[0%] lg:w-[45%] xl:w-[50%] mt-2"
           initial={{ opacity: 0, x: 70 }}
           whileInView={{
             opacity: 1,
@@ -59,7 +59,7 @@ const Network = () => {
 
           {/* Subheading */}
           <motion.h2
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mt-8 md:mt-12 leading-tight"
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold  leading-tight"
         initial="hidden"
         whileInView="visible"
         variants={fadeInUp}

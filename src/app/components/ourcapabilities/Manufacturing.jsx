@@ -265,7 +265,7 @@ export default function Manufacturing() {
           ) : (
             // For smaller screens
             <motion.div
-              className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-10 mb-14"
+              className="flex justify-start md:justify-between md:gap-0 lg:gap-0 items-center my-10 mb-14"
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,

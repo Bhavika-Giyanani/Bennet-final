@@ -136,7 +136,7 @@ const Products = () => {
           viewport={{ once: true }}
         >
           <motion.h3
-            className="text-2xl md:text-3xl  md:-mt-12 font-bold"
+            className="text-2xl md:text-3xl  -mt-12 font-bold"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >

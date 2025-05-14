@@ -152,7 +152,7 @@ useEffect(() => {
                       }}
                     >
                      <span
-  className={`lg:text-[1rem] md:text-[0.6rem] font-medium transition-colors duration-200 ${
+  className={`lg:text-[1rem] md:text-[0.6rem] font-semibold  transition-colors duration-200 ${
     pathname === item.href || item.dropdown?.some(subItem => pathname === subItem.href)
       ? "text-[#AECA1D]"
       : "text-slate-700 hover:text-[#AECA1D]/80"
@@ -160,15 +160,15 @@ useEffect(() => {
 >
   {item.name}
 </span>
-                      <ChevronDown size={16} className="ml-1 md:mt-2 lg:mt-0" />
+                      <ChevronDown size={16} className="ml-1 md:mt-2 lg:mt-0 font-semibold" />
                     </div>
                     {isDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md overflow-hidden z-10">
+                      <div className="absolute top-full  left-0 mt-2 bg-white shadow-lg rounded-md overflow-hidden z-10">
                         {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className={`block px-4 py-2 text-sm ${
+                            className={`block px-4 py-2  text-sm ${
                               pathname === subItem.href
                                 ? "text-[#AECA1D]"
                                 : "text-gray-700 hover:bg-gray-100"
@@ -184,7 +184,7 @@ useEffect(() => {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`lg:text-[1rem] md:text-[0.6rem] font-medium transition-colors duration-200 ${
+                    className={`lg:text-[1rem] md:text-[0.6rem] font-semibold transition-colors duration-200 ${
                       pathname === item.href
                         ? "text-[#AECA1D]"
                         : "text-slate-700 hover:text-[#AECA1D]/80"
@@ -263,7 +263,7 @@ useEffect(() => {
                         >
                           {item.name}
                         </span>
-                        <ChevronDown size={16} className="ml-1 mt-1" />
+                        <ChevronDown size={16} className="ml-1 " />
                       </div>
                       {isDropdownOpen && (
                         <div className="pl-4">

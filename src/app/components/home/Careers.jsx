@@ -19,10 +19,10 @@ const Events = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 pt-6 md:pt-8 pb-14 md:pb-16 ">
         {/* Header with line */}
         <motion.div
-          className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-8 md:my-10 mb-10 md:mb-14 overflow-hidden"
+          className="flex justify-start md:justify-center md:gap-0 lg:gap-0 items-center my-8 mb-10 md:mb-14 overflow-hidden"
           initial={{ opacity: 0, x: -70 }}
           whileInView={{
             opacity: 1,
